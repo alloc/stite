@@ -1,6 +1,7 @@
 {
   "name": "@saus/utils",
   "version": "0.4.10",
+  "type": "commonjs",
   "scripts": {
     "clean": "rimraf dist && git checkout HEAD dist",
     "build": "npm run clean && tsup-node && tsc -p . --emitDeclarationOnly",

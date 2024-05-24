@@ -1,6 +1,7 @@
 {
   "name": "@saus/runtime",
   "version": "0.4.10",
+  "type": "module",
   "scripts": {
     "clean": "rimraf dist && git checkout HEAD dist",
     "build": "npm run clean && tsup-node && tsc -p . --emitDeclarationOnly",
