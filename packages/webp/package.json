@@ -13,8 +13,7 @@
   ],
   "scripts": {
     "build": "rimraf dist && tsup",
-    "dev": "tsup --watch",
-    "prepare": "yarn build"
+    "dev": "tsup --watch"
   },
   "dependencies": {
     "@rollup/pluginutils": "^4.1.2",

@@ -5,7 +5,6 @@
     "build:packages": "pnpm --no-bail --filter './packages/**/*' build",
     "dev": "pnpm --no-bail --filter './src' --filter './src/*' --parallel dev",
     "dev:packages": "pnpm --no-bail --filter './packages/**/*' --parallel dev",
-    "prepare": "pnpm build",
     "test": "vitest"
   },
   "devDependencies": {

@@ -18,8 +18,7 @@
   ],
   "scripts": {
     "build": "rimraf dist && tsup",
-    "dev": "rimraf dist && tsup --watch --sourcemap",
-    "prepare": "yarn build"
+    "dev": "rimraf dist && tsup --watch --sourcemap"
   },
   "peerDependencies": {
     "saus": "*"
@@ -29,6 +28,6 @@
     "saus": "*"
   },
   "dependencies": {
-    "@saus/cloudflare-request": "^0.1.0"
+    "@saus/cloudflare-request": "workspace:^0.1.0"
   }
 }

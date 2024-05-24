@@ -12,8 +12,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch --sourcemap",
-    "prepare": "yarn build"
+    "dev": "tsup --watch --sourcemap"
   },
   "peerDependencies": {
     "saus": "*"
@@ -22,6 +21,6 @@
     "saus": "*"
   },
   "dependencies": {
-    "@saus/cloudflare-request": "^0.1.0"
+    "@saus/cloudflare-request": "workspace:^0.1.0"
   }
 }

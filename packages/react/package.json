@@ -26,8 +26,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch --sourcemap",
-    "prepare": "yarn build"
+    "dev": "tsup --watch --sourcemap"
   },
   "peerDependencies": {
     "react": "*",
