@@ -5,7 +5,7 @@
     "esModuleInterop": true,
     "jsx": "react",
     "lib": ["es2018"],
-    "module": "esnext",
+    "module": "node16",
     "moduleResolution": "node16",
     "noUnusedLocals": true,
     "outDir": "dist",
