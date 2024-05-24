@@ -1,4 +1,5 @@
 import { esbuildPluginFilePathExtensions } from 'esbuild-plugin-file-path-extensions'
+import glob from 'fast-glob'
 import path from 'path'
 import { defineConfig } from 'tsup'
 import { PackageJson } from 'type-fest'
@@ -6,7 +7,8 @@ import { PackageJson } from 'type-fest'
 const pkgJson = require('./package.json') as PackageJson
 
 const isProduction = process.env.NODE_ENV == 'production'
-const productionEntries = [
+
+const productionEntries = () => [
   'cli.ts',
   'index.ts',
   // Submodules
@@ -43,21 +45,22 @@ const productionEntries = [
   'secrets/defineSecrets.ts',
 ]
 
+const devEntries = () =>
+  glob.sync([
+    '**/*.ts',
+    '!**/*.spec.ts',
+    '!**/node_modules/**',
+    '!**/dist/**',
+    '!tsup.config.ts',
+    '!client/**',
+    '!runtime/**',
+    '!utils/**',
+    '!vm/**',
+  ])
+
 export default defineConfig({
   outDir: 'dist',
-  entry: isProduction
-    ? productionEntries
-    : [
-        '**/*.ts',
-        '!**/*.spec.ts',
-        '!**/node_modules/**',
-        '!**/dist/**',
-        '!tsup.config.ts',
-        '!client/**',
-        '!runtime/**',
-        '!utils/**',
-        '!vm/**',
-      ],
+  entry: isProduction ? productionEntries() : devEntries(),
   format: ['cjs', 'esm'],
   target: 'node16',
   bundle: isProduction,
