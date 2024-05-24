@@ -20,6 +20,9 @@
     },
     "vendor/cac": {
       "url": "https://github.com/aleclarson/cac"
+    },
+    "vendor/vite": {
+      "url": "https://github.com/alloc/vite.git"
     }
   },
   "alias": {
