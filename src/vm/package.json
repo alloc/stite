@@ -6,7 +6,7 @@
     "build": "npm run clean && tsup-node && tsc -p . --emitDeclarationOnly",
     "dev": "concurrently npm:dev:*",
     "dev:build": "tsup-node --watch --sourcemap",
-    "dev:types": "tsc -p . --emitDeclarationOnly --watch"
+    "dev:types": "tsc -p . --emitDeclarationOnly --watch --preserveWatchOutput"
   },
   "dependencies": {
     "@saus/utils": "workspace:*",
