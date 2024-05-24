@@ -7,6 +7,7 @@
     "declaration": true,
     "declarationMap": true,
     "incremental": true,
+    "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "dist",
     "tsBuildInfoFile": "dist/.tsbuildinfo"

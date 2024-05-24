@@ -4,7 +4,7 @@
     "declaration": true,
     "esModuleInterop": true,
     "lib": ["es2018"],
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node16",
     "noUnusedLocals": false,
     "outDir": "dist",
