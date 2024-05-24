@@ -1,12 +1,13 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
-    "clean": "rimraf ./dist && git checkout HEAD dist && npm run link",
-    "build": "npm run clean && NODE_ENV=production tsup && tsc -p . --emitDeclarationOnly",
-    "dev": "tsup --watch --sourcemap",
+    "clean": "rimraf ./dist && git checkout HEAD ./dist && pnpm run link",
+    "build": "pnpm -s clean && NODE_ENV=production tsup && tsc -p . --emitDeclarationOnly",
+    "dev": "pnpm -s clean && tsup --watch --sourcemap",
     "link": "cd dist && ln -sf ../node_modules/@client ./client && ln -sf ../node_modules/@runtime ./runtime && ln -sf ../node_modules/@utils ./utils && ln -sf ../node_modules/@vm ./vm",
     "lint": "tsc -p . --noEmit && eslint . --ext .ts",
-    "postinstall": "npm run link"
+    "postinstall": "pnpm run link"
   },
   "dependencies": {
     "@": "link:./dist/core",
