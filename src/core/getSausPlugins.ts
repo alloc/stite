@@ -6,18 +6,11 @@ export async function getSausPlugins(
   config: vite.ResolvedConfig = context.config
 ) {
   const sausPlugins: SausPlugin[] = []
-  for (const p of flattenPlugins(config.plugins, p => {
-    if (!p || !p.saus) {
-      return false
+  for (const p of config.plugins) {
+    if (!p || !p.saus || !isApplicablePlugin(p, config)) {
+      continue
     }
-    if (typeof p.apply == 'function') {
-      return p.apply(config.inlineConfig, {
-        command: config.command,
-        mode: config.mode,
-      })
-    }
-    return !p.apply || p.apply == config.command
-  })) {
+
     const sausPlugin =
       typeof p.saus == 'function' ? await p.saus(context, config) : p.saus!
 
@@ -29,10 +22,12 @@ export async function getSausPlugins(
   return sausPlugins
 }
 
-function flattenPlugins<T extends vite.Plugin>(
-  plugins: readonly T[],
-  filter?: (p: T) => any
-) {
-  const filtered: vite.Plugin[] = filter ? plugins.filter(filter) : [...plugins]
-  return vite.sortVitePlugins(filtered).flat() as T[]
+function isApplicablePlugin(p: vite.Plugin, config: vite.ResolvedConfig) {
+  if (typeof p.apply == 'function') {
+    return p.apply(config.inlineConfig, {
+      command: config.command,
+      mode: config.mode,
+    })
+  }
+  return p.apply == null || p.apply == config.command
 }
