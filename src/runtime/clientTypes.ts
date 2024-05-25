@@ -1,5 +1,5 @@
 import { AnyToObject } from '@utils/types'
-import type { RouteParams } from './routeTypes'
+import type { RouteParams } from './routeTypes.js'
 
 export type AnyClientProps = CommonClientProps & Record<string, any>
 

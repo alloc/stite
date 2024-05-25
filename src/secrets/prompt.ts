@@ -1,6 +1,6 @@
 import { prompt } from '@utils/node/prompt'
 import { bold } from 'kleur/colors'
-import { SecretMap } from './types'
+import { SecretMap } from './types.js'
 
 export async function askForSecrets(names: Iterable<string>) {
   const secrets: SecretMap = {}

@@ -1,5 +1,5 @@
-import clientAssets from '../clientAssets'
-import clientModules from '../clientModules'
+import clientAssets from '../clientAssets.js'
+import clientModules from '../clientModules.js'
 
 export async function loadModule(id: string) {
   return clientModules[id]

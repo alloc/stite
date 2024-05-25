@@ -1,6 +1,6 @@
 import { MagicString } from '@utils/magic-string'
-import { HtmlTag } from './types'
-import allow from './xss/allow'
+import { HtmlTag } from './types.js'
+import allow from './xss/allow.js'
 
 /**
  * When the given `tag` is not allowed, `false` is returned

@@ -1,5 +1,5 @@
 import { createAmzRequestFn } from '@saus/aws-utils'
-import { CloudFront } from './types'
+import { CloudFront } from './types.js'
 
 export const signedRequest = (region: string) =>
   createAmzRequestFn<{

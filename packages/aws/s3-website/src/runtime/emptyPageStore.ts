@@ -1,7 +1,7 @@
 import { createInvalidation } from '@saus/aws-cloudfront'
 import { emptyBucket } from '@saus/aws-s3'
-import secrets from '../secrets'
-import { PurgeProps } from './types'
+import secrets from '../secrets.js'
+import { PurgeProps } from './types.js'
 
 /**
  * Delete all assets from the "PageStore" bucket.

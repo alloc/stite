@@ -1,4 +1,4 @@
-import { SPACE } from './tokens'
+import { SPACE } from './tokens.js'
 
 export type ImportDescriptorMap = {
   [source: string]: string | (string | [name: string, alias: string])[]
@@ -45,7 +45,7 @@ export type ParsedImport = {
 export function parseImports(code: string) {
   const imports: ParsedImport[] = []
   const importRE =
-    /\b(export|import)\b *(?:[^.?;]+? *\bfrom *)?["']([\w@$./-]+)["'];?/g
+    /\b(export|import)\b *(?:[^.?;]+? *\bfrom *)?["']([\w@$./-]+)[".js'];?/g
 
   let match: RegExpExecArray | null
   while ((match = importRE.exec(code))) {

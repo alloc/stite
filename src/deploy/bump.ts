@@ -2,7 +2,7 @@ import { prompt } from '@utils/node/prompt'
 import { readFileSync, writeFileSync } from 'fs'
 import { fatal } from 'misty'
 import path from 'path'
-import { onDeploy } from './hooks'
+import { onDeploy } from './hooks.js'
 
 export type VersionBump = 'patch' | 'minor' | 'major'
 

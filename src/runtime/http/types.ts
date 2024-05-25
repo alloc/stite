@@ -2,11 +2,11 @@ import { httpMethods } from '@utils/httpMethods'
 import { OneOrMany, Remap } from '@utils/types'
 import http, { Agent } from 'http'
 import { CamelCase, Promisable } from 'type-fest'
-import type { Endpoint } from '../endpoint'
-import { HttpRedirect } from './redirect'
-import { HttpResponse } from './response'
+import type { Endpoint } from '../endpoint.js'
+import { HttpRedirect } from './redirect.js'
+import { HttpResponse } from './response.js'
 
-export type { BufferLike } from '../app/types'
+export type { BufferLike } from '../app/types.js'
 
 export const URL = (globalThis as any).URL as typeof import('url').URL
 export type URL = import('url').URL

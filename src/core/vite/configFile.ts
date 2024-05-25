@@ -1,6 +1,6 @@
-import { SausCommand } from '../context'
-import { vite } from '../vite'
-import { getConfigEnv } from './config'
+import { SausCommand } from '../context.js'
+import { vite } from '../vite.js'
+import { getConfigEnv } from './config.js'
 
 export const loadConfigFile = (
   command: SausCommand,

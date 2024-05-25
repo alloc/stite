@@ -1,6 +1,6 @@
-import { routesModule } from './global'
-import { parseRoutePath } from './parseRoutePath'
-import { RouteIncludeOption } from './routeTypes'
+import { routesModule } from './global.js'
+import { parseRoutePath } from './parseRoutePath.js'
+import { RouteIncludeOption } from './routeTypes.js'
 
 /**
  * Include the provided state modules in all routes by default.

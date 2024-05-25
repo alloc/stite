@@ -1,5 +1,5 @@
 import { unwrapBuffer } from '@utils/node/buffer'
-import { AnyBody } from './writeBody'
+import { AnyBody } from './writeBody.js'
 
 export function unwrapBody(body: AnyBody) {
   return body.stream

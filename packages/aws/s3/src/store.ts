@@ -3,8 +3,8 @@ import { deployedEnv } from 'saus'
 import { AssetStore } from 'saus/core'
 import { wrapBody } from 'saus/http'
 import { defer, Deferred } from 'saus/utils/defer'
-import { deleteObjects } from './deleteObjects'
-import { putObject } from './putObject'
+import { deleteObjects } from './deleteObjects.js'
+import { putObject } from './putObject.js'
 
 export function createStore(bucket: string, region: string): AssetStore {
   const deleteQueue: string[] = []

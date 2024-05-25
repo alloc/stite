@@ -1,5 +1,5 @@
 import { vite } from '@/vite'
-import { command } from '../command'
+import { command } from '../command.js'
 
 command(dev)
   .option('--host [host]', `[string] specify hostname`)
@@ -12,6 +12,6 @@ command(dev)
   )
 
 export async function dev(options: vite.ServerOptions) {
-  const { createServer } = await import('../../dev/api.js')
+  const { createServer } = await import('../../dev/api.js.js')
   await createServer({ server: options })
 }

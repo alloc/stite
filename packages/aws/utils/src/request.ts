@@ -10,9 +10,9 @@ import {
   normalizeObjectResponse,
   parseXmlResponse,
 } from './response'
-import { CamelCasedPropertiesDeep } from './types'
-import { camelize, pascalize } from './utils'
-import { XmlParserOptions } from './xml/parse'
+import { CamelCasedPropertiesDeep } from './types.js'
+import { camelize, pascalize } from './utils.js'
+import { XmlParserOptions } from './xml/parse.js'
 
 interface ActionMap {
   [name: string]: { params: object; result: any }

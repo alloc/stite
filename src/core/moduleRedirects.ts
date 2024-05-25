@@ -4,8 +4,11 @@ import {
   httpDir,
   runtimeDir,
   utilsDir,
-} from '@/paths'
-import { overrideBareImport, redirectModule } from '@/plugins/moduleRedirection'
+} from '@/paths.js'
+import {
+  overrideBareImport,
+  redirectModule,
+} from '@/plugins/moduleRedirection.js'
 import fs from 'fs'
 import path from 'path'
 

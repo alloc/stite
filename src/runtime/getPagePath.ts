@@ -1,5 +1,5 @@
-import { renderRoutePath } from './renderRoutePath'
-import type { RouteParams } from './routeTypes'
+import { renderRoutePath } from './renderRoutePath.js'
+import type { RouteParams } from './routeTypes.js'
 
 export function getPagePath(
   routePath: string,

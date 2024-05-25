@@ -19,7 +19,7 @@ import { plural } from '@utils/plural'
 import { warn } from 'misty'
 import { startTask } from 'misty/task'
 import path from 'path'
-import { internalRedirects, ssrBundleRedirects } from './moduleRedirects'
+import { internalRedirects, ssrBundleRedirects } from './moduleRedirects.js'
 
 type InheritedKeys = 'debugBase' | 'entry' | 'format' | 'clientStore' | 'target'
 

@@ -1,4 +1,4 @@
-import { unescape } from './unescape'
+import { unescape } from './unescape.js'
 
 export interface XmlParserOptions {
   arrayTags?: string[]

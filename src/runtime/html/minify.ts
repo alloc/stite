@@ -1,5 +1,5 @@
-import { setup } from '../setup'
-import { processHtml } from './process'
+import { setup } from '../setup.js'
+import { processHtml } from './process.js'
 
 /**
  * An ultra lightweight means of minifying the HTML of each page.

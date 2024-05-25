@@ -3,8 +3,8 @@ import { defineDeployHook } from 'saus/deploy'
 import { bindExec } from 'saus/node/bindExec'
 import { createCommit } from 'saus/node/git/createCommit'
 import { relativeToCwd } from 'saus/node/relativeToCwd'
-import { PushConfig } from './config'
-import { stashedRoots } from './stash'
+import { PushConfig } from './config.js'
+import { stashedRoots } from './stash.js'
 
 export default defineDeployHook(ctx => {
   return {

@@ -7,9 +7,15 @@
     "declaration": true,
     "declarationMap": true,
     "incremental": true,
-    "moduleResolution": "node",
+    "module": "node16",
+    "moduleResolution": "node16",
     "noEmitOnError": false,
     "outDir": "dist",
+    "paths": {
+      "@/*": ["../core/*"],
+      "@utils/*": ["../utils/*.ts", "../utils/*/index.ts"],
+      "@vm/*": ["../vm/*.ts"]
+    },
     "tsBuildInfoFile": "dist/.tsbuildinfo"
   }
 }

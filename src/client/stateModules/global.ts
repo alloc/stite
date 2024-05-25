@@ -1,6 +1,6 @@
 import { stateModulesByName } from '@runtime/cache/global'
 import type { StateModule } from '@runtime/stateModules'
-import { hydrateState, preHydrateCache } from './hydrate'
+import { hydrateState, preHydrateCache } from './hydrate.js'
 
 export function trackStateModule(module: StateModule) {
   // TODO: escape moduleIds for regex syntax

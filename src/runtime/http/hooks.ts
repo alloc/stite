@@ -1,5 +1,5 @@
 import { noop } from '@utils/noop'
-import { Http } from './types'
+import { Http } from './types.js'
 
 export const requestHook = { current: noop as Http.RequestHook }
 export const responseHook = { current: noop as Http.ResponseHook }

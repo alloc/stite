@@ -1,6 +1,6 @@
 // This overrides the "saus/core" entry in SSR bundles.
 import { setRoutesModule } from '@runtime/global'
-import { context } from '../bundle/context'
+import { context } from '../bundle/context.js'
 
 export * from '@/api'
 export * from '@runtime/ssrModules'

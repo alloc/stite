@@ -1,8 +1,8 @@
 import path from 'path'
 import { addDeployHook, addDeployTarget, getDeployContext } from 'saus/deploy'
-import { Props } from './types'
+import { Props } from './types.js'
 
-const hook = addDeployHook(() => import('./hook'))
+const hook = addDeployHook(() => import('./hook.js'))
 
 export function pushVercelFunctions(options: Props) {
   const { root } = getDeployContext()

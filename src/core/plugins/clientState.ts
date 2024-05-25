@@ -1,7 +1,7 @@
 import { babel, getBabelConfig, NodePath, t } from '@utils/babel'
 import { SourceMap } from '@utils/node/sourceMap'
-import { resolveReferences } from '../babel/resolveReferences'
-import { Plugin } from '../vite'
+import { resolveReferences } from '../babel/resolveReferences.js'
+import { Plugin } from '../vite.js'
 
 const includeRE = /\.m?[tj]sx?$/
 

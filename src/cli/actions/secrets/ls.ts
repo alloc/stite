@@ -1,5 +1,5 @@
 import { gray } from 'kleur/colors'
-import { command } from '../../command'
+import { command } from '../../command.js'
 
 command(listSecrets) //
 

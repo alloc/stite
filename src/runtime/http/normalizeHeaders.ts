@@ -1,4 +1,4 @@
-import { Http } from './types'
+import { Http } from './types.js'
 
 const kNormalized = Symbol.for('saus:normalized')
 

@@ -1,5 +1,5 @@
 import { prompt } from '@utils/node/prompt'
-import { MutableSecretSource } from '../types'
+import { MutableSecretSource } from '../types.js'
 
 export async function selectSource(
   sources: MutableSecretSource[]

@@ -1,8 +1,8 @@
 import { Endpoint } from '@runtime/endpoint'
 import { route } from '@runtime/routeHooks'
 import createDebug from 'debug'
-import { makePurgeRequest } from './request'
-import { PurgeOptions, PurgePlugin } from './types'
+import { makePurgeRequest } from './request.js'
+import { PurgeOptions, PurgePlugin } from './types.js'
 
 const debug = createDebug('saus:purge')
 

@@ -2,8 +2,12 @@ import type { BufferLike } from '@runtime/http'
 import type { SourceMap } from '@utils/node/sourceMap'
 
 export * from '@runtime/bundleTypes'
-export type { BuildContext, BundleContext, InlineBundleConfig } from './context'
-export type { BundleOptions } from './options'
+export type {
+  BuildContext,
+  BundleContext,
+  InlineBundleConfig,
+} from './context.js'
+export type { BundleOptions } from './options.js'
 
 export type ClientChunk = {
   fileName: string

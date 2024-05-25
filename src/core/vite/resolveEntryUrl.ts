@@ -1,4 +1,4 @@
-import type { vite } from '../vite'
+import type { vite } from '../vite.js'
 
 const FS_PREFIX = /^\/@fs\/\/?/
 

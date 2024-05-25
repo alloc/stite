@@ -1,5 +1,5 @@
 import { defer } from '@utils/defer'
-import { kSecretDefinition } from './symbols'
+import { kSecretDefinition } from './symbols.js'
 import type {
   DefinedSecrets,
   MutableSecretSource,

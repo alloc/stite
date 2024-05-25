@@ -2,7 +2,7 @@ import { loadContext } from '@/context'
 import { vite } from '@/vite'
 import { prependBase } from '@utils/base'
 import { noop } from '@utils/noop'
-import { PreviewOptions } from './options'
+import { PreviewOptions } from './options.js'
 
 export async function startPreviewServer(preview: PreviewOptions) {
   const { config, defaultPath } = await loadContext('build', {

@@ -1,6 +1,6 @@
 import { deployedEnv, DeployedEnv } from '@runtime/deployedEnv'
 import { PartialDeep } from 'type-fest'
-import { getDeployContext } from '../deploy'
+import { getDeployContext } from '../deploy.js'
 
 /**
  * Provide JSON values to the production SSR bundle

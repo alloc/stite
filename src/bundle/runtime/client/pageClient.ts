@@ -3,8 +3,8 @@ import { getPagePath } from '@runtime/getPagePath'
 import { ssrImport } from '@runtime/ssrModules'
 import { baseToRegex } from '@utils/base'
 import { noop } from '@utils/noop'
-import config from '../bundle/config'
-import routes from '../bundle/routes'
+import config from '../bundle/config.js'
+import routes from '../bundle/routes.js'
 
 const debugBaseRE = config.debugBase ? baseToRegex(config.debugBase) : null
 

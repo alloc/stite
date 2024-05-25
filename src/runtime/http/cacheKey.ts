@@ -1,5 +1,5 @@
 import { murmurHash } from '@utils/murmur3'
-import type { Http } from './types'
+import type { Http } from './types.js'
 
 /**
  * Generate a cache key for a GET request.

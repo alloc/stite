@@ -1,6 +1,6 @@
-import { serializeTags } from './serialize'
-import { HtmlTagDescriptor } from './types'
-import { incrementIndent } from './utils'
+import { serializeTags } from './serialize.js'
+import { HtmlTagDescriptor } from './types.js'
+import { incrementIndent } from './utils.js'
 
 const headInjectRE = /([ \t]*)<\/head>/
 const headPrependInjectRE = [/([ \t]*)<head>/, /<!doctype html>/i]

@@ -1,5 +1,5 @@
 import { Buffer, unwrapBuffer } from '@utils/node/buffer'
-import { Body } from './writeBody'
+import { Body } from './writeBody.js'
 
 export function wrapBody<T>(body: T): ToBody<T>
 export function wrapBody(body: any): Body | undefined

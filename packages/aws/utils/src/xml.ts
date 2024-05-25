@@ -1,6 +1,6 @@
 import { escape } from 'saus/utils/escape'
 import { isObject } from 'saus/utils/isObject'
-import { parseXML } from './xml/parse'
+import { parseXML } from './xml/parse.js'
 
 export interface XmlDocument {
   /** Add a self-closing tag. */

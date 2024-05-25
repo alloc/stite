@@ -3,10 +3,10 @@ import { getPagePath } from '@runtime/getPagePath'
 import { RouteEntry, RouteParams } from '@runtime/routeTypes'
 import { noop } from '@utils/noop'
 import { AnyToObject } from '@utils/types'
-import { dynamicImport } from './dynamicImport'
-import { applyHead, injectLinkTag } from './head'
-import { loadPageState } from './loadPageState'
-import routes from './routes'
+import { dynamicImport } from './dynamicImport.js'
+import { applyHead, injectLinkTag } from './head.js'
+import { loadPageState } from './loadPageState.js'
+import routes from './routes.js'
 
 export interface PageClient<
   Props extends object = any,

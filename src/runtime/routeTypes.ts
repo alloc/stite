@@ -1,14 +1,14 @@
 import type { AnyToObject, OneOrMany } from '@utils/types'
 import type { RequireAsync } from '@vm/types'
 import type { Promisable } from 'type-fest'
-import type { CommonServerProps } from './app/types'
-import type { Cache } from './cache/types'
-import type { RuntimeHook } from './config'
-import type { Endpoint } from './endpoint'
-import type { HtmlContext } from './html/process'
-import type { RouteLayout } from './layouts'
-import type { RoutePlugin } from './routePlugins'
-import type { StateModule } from './stateModules'
+import type { CommonServerProps } from './app/types.js'
+import type { Cache } from './cache/types.js'
+import type { RuntimeHook } from './config.js'
+import type { Endpoint } from './endpoint.js'
+import type { HtmlContext } from './html/process.js'
+import type { RouteLayout } from './layouts.js'
+import type { RoutePlugin } from './routePlugins.js'
+import type { StateModule } from './stateModules.js'
 
 // Lifted from https://github.com/lukeed/regexparam
 export type InferRouteParams<T extends string> =

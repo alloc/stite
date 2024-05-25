@@ -1,9 +1,9 @@
 import type { ServerResponse } from 'http'
-import { DeclaredHeaders } from './headers'
-import { normalizeHeaders } from './normalizeHeaders'
-import { Http } from './types'
-import { AnyBody, writeBody } from './writeBody'
-import { writeHeaders } from './writeHeaders'
+import { DeclaredHeaders } from './headers.js'
+import { normalizeHeaders } from './normalizeHeaders.js'
+import { Http } from './types.js'
+import { AnyBody, writeBody } from './writeBody.js'
+import { writeHeaders } from './writeHeaders.js'
 
 export function writeResponse(
   res: ServerResponse,

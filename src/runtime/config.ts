@@ -1,5 +1,5 @@
 import { Falsy, OneOrMany } from '@utils/types'
-import type { App, ProfiledEventHandler } from './app/types'
+import type { App, ProfiledEventHandler } from './app/types.js'
 
 export interface RuntimeConfig {
   appVersion?: string

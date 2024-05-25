@@ -4,7 +4,7 @@ import { globalCache, stateModulesByName } from '@runtime/cache/global'
 import { stateModulesByFile } from '@runtime/stateModules/global'
 import { serveCache } from '@runtime/stateModules/serve'
 import { prependBase } from '@utils/base'
-import { defer, Deferred } from '@utils/defer'
+import { Deferred, defer } from '@utils/defer'
 import { take } from '@utils/take'
 import { isLiveModule } from '@vm/isLiveModule'
 import {
@@ -12,12 +12,12 @@ import {
   purgeModule,
   unloadModuleAndImporters,
 } from '@vm/moduleMap'
-import { CompiledModule, isLinkedModule, LinkedModule } from '@vm/types'
+import { CompiledModule, LinkedModule, isLinkedModule } from '@vm/types'
 import createDebug from 'debug'
 import { green, yellow } from 'kleur/colors'
 import path from 'path'
 import { Promisable } from 'type-fest'
-import { DevContext } from './context'
+import { DevContext } from './context.js'
 
 const debug = createDebug('saus:hotReload')
 

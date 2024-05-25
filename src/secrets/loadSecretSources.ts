@@ -1,8 +1,8 @@
 import { defer } from '@utils/defer'
 import { noop } from '@utils/noop'
 import { green } from 'kleur/colors'
-import { DeployContext } from '../deploy/context'
-import { loadDeployFile } from '../deploy/loader'
+import { DeployContext } from '../deploy/context.js'
+import { loadDeployFile } from '../deploy/loader.js'
 
 export async function loadSecretSources(context: DeployContext) {
   // Use the `addTarget` function to detect when to

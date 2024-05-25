@@ -1,9 +1,9 @@
 import { AnyToObject } from '@utils/types'
 import { Promisable } from 'type-fest'
-import { ClientHooks } from './clientHooks'
-import { UnsafeHTML } from './html/template'
-import { defineLayoutRenderer } from './layoutRenderer'
-import { RenderRequest } from './renderer'
+import { ClientHooks } from './clientHooks.js'
+import { UnsafeHTML } from './html/template.js'
+import { defineLayoutRenderer } from './layoutRenderer.js'
+import { RenderRequest } from './renderer.js'
 
 export type HeadDescription = string | UnsafeHTML
 

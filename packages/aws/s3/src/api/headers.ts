@@ -1,5 +1,5 @@
-import { pick, pickAllExcept } from '../utils/pick'
-import { commonParamKeys } from './params'
+import { pick, pickAllExcept } from '../utils/pick.js'
+import { commonParamKeys } from './params.js'
 
 /**
  * Convert pascal-cased API params into HTTP headers. \

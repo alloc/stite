@@ -1,4 +1,4 @@
-import './context'
+import './context.js'
 
 export * from '@runtime/clientTypes'
 export * from './api'

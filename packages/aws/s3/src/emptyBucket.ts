@@ -1,6 +1,6 @@
 import { AmzRequestOptions } from '@saus/aws-utils'
-import { deleteObjects } from './deleteObjects'
-import { listObjects } from './listObjects'
+import { deleteObjects } from './deleteObjects.js'
+import { listObjects } from './listObjects.js'
 
 export function emptyBucket(region: string) {
   return async (bucket: string, opts?: AmzRequestOptions) => {

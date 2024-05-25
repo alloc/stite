@@ -1,9 +1,9 @@
 import { parseXmlResponse } from '@saus/aws-utils'
-import { formatAmzHeaders, formatHeaders } from './api/headers'
-import { commonParamKeys } from './api/params'
-import { signedRequest } from './api/request'
-import { S3 } from './api/types'
-import { pickAllExcept } from './utils/pick'
+import { formatAmzHeaders, formatHeaders } from './api/headers.js'
+import { commonParamKeys } from './api/params.js'
+import { signedRequest } from './api/request.js'
+import { S3 } from './api/types.js'
+import { pickAllExcept } from './utils/pick.js'
 
 export function listObjects(region: string) {
   return signedRequest(region).action('ListObjects', {

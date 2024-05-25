@@ -5,8 +5,8 @@ import type { ParsedUrl } from '@runtime/url'
 import type { Promisable } from '@utils/types'
 import type { RequireAsync } from '@vm/types'
 import { Merge } from 'type-fest'
-import type { DevEventEmitter } from './events'
-import type { HotReloadFn } from './hotReload'
+import type { DevEventEmitter } from './events.js'
+import type { HotReloadFn } from './hotReload.js'
 
 export interface DevContext extends Merge<BaseContext, DevState & DevMethods> {
   command: 'serve'

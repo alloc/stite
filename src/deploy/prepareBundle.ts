@@ -1,6 +1,6 @@
 import { loadBundle, LoadBundleConfig } from '@/loadBundle'
-import { bumpAppVersion } from './bump'
-import { onDeploy } from './hooks'
+import { bumpAppVersion } from './bump.js'
+import { onDeploy } from './hooks.js'
 
 /**
  * Prepare the Saus SSR bundle for deployment.

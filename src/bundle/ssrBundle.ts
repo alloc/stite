@@ -13,11 +13,11 @@ import esModuleLexer from 'es-module-lexer'
 import fs from 'fs'
 import kleur from 'kleur'
 import path from 'path'
-import { BundleContext } from '../bundle/context'
-import { IsolatedModuleMap } from './isolateRoutes'
-import type { BundleOptions } from './options'
-import { preferExternal } from './preferExternal'
-import { renderBundleModule } from './renderBundleModule'
+import { BundleContext } from '../bundle/context.js'
+import { IsolatedModuleMap } from './isolateRoutes.js'
+import type { BundleOptions } from './options.js'
+import { preferExternal } from './preferExternal.js'
+import { renderBundleModule } from './renderBundleModule.js'
 
 export async function compileServerBundle(
   ssrEntryId: string,

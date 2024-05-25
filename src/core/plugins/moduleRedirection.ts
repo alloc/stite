@@ -5,7 +5,7 @@ import fs from 'fs'
 import os from 'os'
 import path from 'path'
 import type { PartialResolvedId } from 'rollup'
-import type { vite } from '../core'
+import type { vite } from '../core.js'
 
 type Promisable<T> = T | Promise<T>
 

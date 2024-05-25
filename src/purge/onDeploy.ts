@@ -1,5 +1,5 @@
-// import type { OutputBundle } from '../bundle'
-// import { onDeploy } from '../deploy'
+// import type { OutputBundle } from '../bundle.js'
+// import { onDeploy } from '../deploy.js'
 
 // /**
 //  * @experimental

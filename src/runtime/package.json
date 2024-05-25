@@ -20,9 +20,5 @@
     "kleur": "^4.1.4",
     "misty": "^1.6.7",
     "type-fest": "^2.13.0"
-  },
-  "devDependencies": {
-    "@utils": "link:./node_modules/@saus/utils/dist",
-    "@vm": "link:./node_modules/@saus/vm/dist"
   }
 }

@@ -2,9 +2,9 @@ import { createHash } from 'crypto'
 import * as mime from 'mrmime'
 import { unwrapBody } from 'saus/http'
 import { controlExecution } from 'saus/utils/controlExecution'
-import { paramsToHeaders } from './api/headers'
-import { signedRequest } from './api/request'
-import { writeThrottler } from './utils/throttle'
+import { paramsToHeaders } from './api/headers.js'
+import { signedRequest } from './api/request.js'
+import { writeThrottler } from './utils/throttle.js'
 
 /**
  * Upload an object to a S3 bucket.

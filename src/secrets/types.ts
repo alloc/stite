@@ -1,5 +1,5 @@
 import { Promisable } from 'type-fest'
-import { kSecretDefinition } from './symbols'
+import { kSecretDefinition } from './symbols.js.js'
 
 /** This can be extended by plugins via interface merging. */
 export interface KnownSecrets {}

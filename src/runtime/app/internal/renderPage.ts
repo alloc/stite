@@ -5,12 +5,12 @@ import { noop } from '@utils/noop'
 import { parseHead } from '@utils/parseHead'
 import { unwrapDefault } from '@utils/unwrapDefault'
 import createDebug from 'debug'
-import { RouteLayout } from '../../layouts'
-import { renderHtml } from '../../renderHtml'
-import { RenderRequest } from '../../renderer'
-import { Route, RouteModule } from '../../routeTypes'
-import { ParsedUrl } from '../../url'
-import { collectStateFiles } from '../collectStateFiles'
+import { RouteLayout } from '../../layouts.js'
+import { renderHtml } from '../../renderHtml.js'
+import { RenderRequest } from '../../renderer.js'
+import { Route, RouteModule } from '../../routeTypes.js'
+import { ParsedUrl } from '../../url.js'
+import { collectStateFiles } from '../collectStateFiles.js'
 import {
   AnyServerProps,
   App,
@@ -18,7 +18,7 @@ import {
   RenderPageOptions,
   RenderPageResult,
   RenderedPage,
-} from '../types'
+} from '../types.js'
 
 const debug = createDebug('saus:pages')
 

@@ -1,6 +1,6 @@
 import { AmzCredentials } from '@saus/aws-utils'
-import { copyObject } from './copyObject'
-import { deleteObjects } from './deleteObjects'
+import { copyObject } from './copyObject.js'
+import { deleteObjects } from './deleteObjects.js'
 
 interface Options {
   keys: string[]

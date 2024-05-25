@@ -1,5 +1,5 @@
 import { globalCache } from '@runtime/cache/global'
-import { PurgePlugin } from './types'
+import { PurgePlugin } from './types.js'
 
 export function purgeServerCache(): PurgePlugin {
   return {

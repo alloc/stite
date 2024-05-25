@@ -35,10 +35,10 @@ import { bold, gray, red } from 'kleur/colors'
 import path from 'path'
 import { debounce } from 'ts-debounce'
 import { inspect } from 'util'
-import { DevContext } from './context'
-import { createDevApp } from './createDevApp'
-import { DevEventEmitter } from './events'
-import { createHotReload } from './hotReload'
+import { DevContext } from './context.js'
+import { createDevApp } from './createDevApp.js'
+import { DevEventEmitter } from './events.js'
+import { createHotReload } from './hotReload.js'
 
 export interface SausDevServer {
   (req: http.IncomingMessage, res: http.ServerResponse, next?: () => void): void

@@ -2,7 +2,7 @@ import type { App } from '@runtime/app/types'
 import { createCache } from '@runtime/cache/create'
 import type { MutableRuntimeConfig } from '@runtime/config'
 import { ssrImport } from '@runtime/ssrModules'
-import config from './config'
+import config from './config.js'
 
 export const context: App.Context = {
   config,

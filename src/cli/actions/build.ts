@@ -8,7 +8,7 @@ import { cyan, gray, red } from 'kleur/colors'
 import { success } from 'misty'
 import { startTask } from 'misty/task'
 import log from 'shared-log'
-import { command } from '../command'
+import { command } from '../command.js'
 
 command(build, '[cacheDir]')
   .option('-w, --maxWorkers [count]', `[number] set to zero to disable workers`)
@@ -33,8 +33,8 @@ export type BuildFlags = BuildOptions & {
 
 export async function build(cacheDir: string | undefined, options: BuildFlags) {
   const [{ build }, { getFailedPages, setFailedPages }] = await resolveModules(
-    import('../../build/api.js'),
-    import('../../build/failedPages.js')
+    import('../../build/api.js.js'),
+    import('../../build/failedPages.js.js')
   )
 
   if (process.stdin.isTTY) {

@@ -2,7 +2,7 @@ import exec from '@cush/exec'
 import { createCommit } from '@utils/node/git/createCommit'
 import fs from 'fs'
 import path from 'path'
-import { GitFiles } from './files'
+import { GitFiles } from './files.js'
 
 export async function syncDeployCache(
   cacheDir: string,

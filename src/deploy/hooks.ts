@@ -1,7 +1,7 @@
 import { defer } from '@utils/defer'
 import { getStackFrame } from '@utils/node/stack'
 import { Merge, Promisable } from 'type-fest'
-import { getDeployContext } from './context'
+import { getDeployContext } from './context.js'
 import type {
   DefineDeployHook,
   DeployAction,

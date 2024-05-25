@@ -1,9 +1,9 @@
 import { defineDeployHook } from 'saus/deploy'
-import { describeStack } from './api/describeStack'
-import { describeStackEvents } from './api/describeStackEvents'
-import { signedRequest } from './api/request'
-import secrets from './secrets'
-import { Stack } from './types'
+import { describeStack } from './api/describeStack.js'
+import { describeStackEvents } from './api/describeStackEvents.js'
+import { signedRequest } from './api/request.js'
+import secrets from './secrets.js'
+import { Stack } from './types.js'
 
 export default defineDeployHook(ctx => ({
   name: '@saus/cloudform',

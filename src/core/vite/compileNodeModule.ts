@@ -2,13 +2,13 @@ import { toArray } from '@utils/array'
 import { isPackageRef } from '@utils/isPackageRef'
 import { CompileCache } from '@utils/node/compileCache'
 import { resolveMapSources, toInlineSourceMap } from '@utils/node/sourceMap'
+import { ImporterSet } from '@vm/ImporterSet'
 import {
   compileEsm,
   importAsyncId,
   importMetaId,
   requireAsyncId,
 } from '@vm/compileEsm'
-import { ImporterSet } from '@vm/ImporterSet'
 import { isLiveModule } from '@vm/isLiveModule'
 import { ModuleMap } from '@vm/moduleMap'
 import { overwriteScript } from '@vm/overwriteScript'
@@ -20,7 +20,7 @@ import toGlobBase from 'glob-base'
 import { Module } from 'module'
 import path from 'path'
 import { crawl } from 'recrawl-sync'
-import { vite } from '../vite'
+import { vite } from '../vite.js'
 
 /**
  * Compile an ES module from `node_modules` into a CJS module.

@@ -3,7 +3,7 @@ import { writeResponse } from '@runtime/http/writeResponse'
 import { makeRequestUrl } from '@runtime/makeRequest'
 import { parseUrl } from '@runtime/url'
 import { streamToBuffer } from '@utils/streamToBuffer'
-import { connect } from './connect'
+import { connect } from './connect.js'
 
 interface RequestProps {
   app: App

@@ -1,12 +1,12 @@
-import { EnforcementPhase } from './process'
-import { kVisitorsArray } from './symbols'
-import { findTraverseVisitor, traverseHtml } from './traversal'
+import { EnforcementPhase } from './process.js'
+import { kVisitorsArray } from './symbols.js'
+import { findTraverseVisitor, traverseHtml } from './traversal.js'
 import {
   HtmlResolver,
   HtmlResolverState,
   HtmlTagPath,
   HtmlVisitor,
-} from './types'
+} from './types.js'
 
 const kResolverList = Symbol.for('html.ResolverList')
 

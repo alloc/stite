@@ -1,6 +1,6 @@
 import { getStackFrame } from '@utils/node/stack/getStackFrame'
-import { stateModulesByName } from '../cache/global'
-import type { StateModule } from '../stateModules'
+import { stateModulesByName } from '../cache/global.js'
+import type { StateModule } from '../stateModules.js'
 
 export const stateModulesByFile = new Map<string, Map<string, StateModule>>()
 

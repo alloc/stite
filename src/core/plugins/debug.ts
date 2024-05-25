@@ -1,7 +1,7 @@
 import { sausRootDir } from '@/paths'
 import path from 'path'
-import { vite } from '../core'
-import { debug } from '../debug'
+import { vite } from '../core.js'
+import { debug } from '../debug.js'
 
 export function debugForbiddenImports(imports: string[]): vite.Plugin | false {
   if (!process.env.DEBUG) {

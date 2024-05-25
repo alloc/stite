@@ -1,14 +1,14 @@
 import { NoInfer } from '@utils/types'
 import { Promisable } from 'type-fest'
-import { toExpirationTime } from './cache/expiration'
-import { globalCache } from './cache/global'
-import { Cache } from './cache/types'
-import { getStateModuleKey } from './getStateModuleKey'
-import { getState } from './stateModules/get'
-import { trackStateModule } from './stateModules/global'
-import { hydrateState, hydrateStateListener } from './stateModules/hydrate'
-import { serveState } from './stateModules/serve'
-import { setState } from './stateModules/setState'
+import { toExpirationTime } from './cache/expiration.js'
+import { globalCache } from './cache/global.js'
+import { Cache } from './cache/types.js'
+import { getStateModuleKey } from './getStateModuleKey.js'
+import { getState } from './stateModules/get.js'
+import { trackStateModule } from './stateModules/global.js'
+import { hydrateState, hydrateStateListener } from './stateModules/hydrate.js'
+import { serveState } from './stateModules/serve.js'
+import { setState } from './stateModules/setState.js'
 
 type ServerArgs<T> = T extends StateModule.ServeFunction<any, infer Args>
   ? Args

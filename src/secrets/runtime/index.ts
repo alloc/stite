@@ -1,3 +1,3 @@
-export * from '../types'
-export * from './addSecrets'
-export * from './checkSecrets'
+export * from '../types.js'
+export * from './addSecrets.js'
+export * from './checkSecrets.js'

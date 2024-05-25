@@ -8,8 +8,8 @@ import {
   TransformResult,
 } from 'rollup'
 import { Promisable } from 'type-fest'
-import { compileModule } from '../../vm/compileModule'
-import { vite } from '../vite'
+import { compileModule } from '../../vm/compileModule.js'
+import { vite } from '../vite.js'
 
 export interface ViteFunctions {
   buildStart(): Promise<void>

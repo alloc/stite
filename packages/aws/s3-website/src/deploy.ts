@@ -11,10 +11,10 @@ import { OutputBundle } from 'saus'
 import { addSecrets, getDeployContext, onDeploy } from 'saus/deploy'
 import { normalizeHeaderKeys } from 'saus/http'
 import { mergeArrays } from 'saus/utils/array'
-import { WebsiteConfig } from './config'
-import secrets from './secrets'
-import { syncStaticFiles } from './sync'
-import { varyByDevice } from './varyByDevice'
+import { WebsiteConfig } from './config.js'
+import secrets from './secrets.js'
+import { syncStaticFiles } from './sync.js'
+import { varyByDevice } from './varyByDevice.js'
 
 addSecrets(deployWebsiteToS3, secrets)
 addSecrets(deployWebsiteToS3, [useCloudFormation])

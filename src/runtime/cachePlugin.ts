@@ -1,6 +1,6 @@
 import type { Promisable } from 'type-fest'
-import type { Cache } from './cache/types'
-import { serveCache } from './stateModules/serve'
+import type { Cache } from './cache/types.js'
+import { serveCache } from './stateModules/serve.js'
 
 /**
  * The `CachePlugin` is a normalized data storage layer.

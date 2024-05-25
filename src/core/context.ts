@@ -12,18 +12,22 @@ import { ModuleMap } from '@vm/moduleMap'
 import { CompiledModule, RequireAsync } from '@vm/types'
 import arrify from 'arrify'
 import { EventEmitter } from 'ee-ts'
-import type { BuildContext, BundleContext } from '../bundle/context'
-import type { DeployContext } from '../deploy'
-import type { DevContext, DevMethods, DevState } from '../dev/context'
-import { getSausPlugins } from './getSausPlugins'
-import { VirtualImports } from './injectModules'
-import { toSausPath } from './paths'
-import { ModuleProvider } from './plugins/moduleProvider'
-import { PublicDirOptions } from './publicDir'
-import { RouteClients } from './routeClients'
-import { Plugin, ResolvedConfig, SausConfig, SausPlugin, vite } from './vite'
-import { getConfigEnv, LoadedUserConfig, loadUserConfig } from './vite/config'
-import { ViteFunctions } from './vite/functions'
+import type { BuildContext, BundleContext } from '../bundle/context.js'
+import type { DeployContext } from '../deploy/index.js'
+import type { DevContext, DevMethods, DevState } from '../dev/context.js'
+import { getSausPlugins } from './getSausPlugins.js'
+import { VirtualImports } from './injectModules.js'
+import { toSausPath } from './paths.js'
+import { ModuleProvider } from './plugins/moduleProvider.js'
+import { PublicDirOptions } from './publicDir.js'
+import { RouteClients } from './routeClients.js'
+import { Plugin, ResolvedConfig, SausConfig, SausPlugin, vite } from './vite.js'
+import {
+  LoadedUserConfig,
+  getConfigEnv,
+  loadUserConfig,
+} from './vite/config.js'
+import { ViteFunctions } from './vite/functions.js'
 
 export type SausCommand = 'build' | 'serve' | 'deploy' | 'secrets'
 export type SausContext = BuildContext | DeployContext | DevContext
@@ -103,7 +107,7 @@ export interface BaseContext
   userConfig: vite.UserConfig
 }
 
-export type { DevContext, BuildContext, BundleContext, DeployContext }
+export type { BuildContext, BundleContext, DeployContext, DevContext }
 
 type InlinePlugin = (
   sausConfig: SausConfig,

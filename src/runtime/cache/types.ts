@@ -1,9 +1,9 @@
 import { Promisable } from 'type-fest'
-import { CachePlugin } from '../cachePlugin'
-import type { StateModule } from '../stateModules'
-import { access, get, has, load } from './access'
-import { clear } from './clear'
-import { forEach } from './forEach'
+import { CachePlugin } from '../cachePlugin.js'
+import type { StateModule } from '../stateModules.js'
+import { access, get, has, load } from './access.js'
+import { clear } from './clear.js'
+import { forEach } from './forEach.js'
 
 export type Cache<State = unknown> = {
   listeners: Record<string, Set<Cache.Listener>>
@@ -61,7 +61,7 @@ export namespace Cache {
   export type MaxAge = number | null | undefined
 
   export type EntryContext<State = unknown> =
-    import('./context').EntryContext<State>
+    import('./context.js').EntryContext<State>
 
   export interface EntryPromise<State>
     extends globalThis.Promise<Entry<State>> {

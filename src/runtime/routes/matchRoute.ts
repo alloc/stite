@@ -1,4 +1,4 @@
-import { ParsedRoute } from '../routeTypes'
+import { ParsedRoute } from '../routeTypes.js'
 
 export function matchRoute(path: string, route: ParsedRoute) {
   return route.pattern

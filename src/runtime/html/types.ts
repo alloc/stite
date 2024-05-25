@@ -1,8 +1,8 @@
 import { MagicString } from '@utils/magic-string'
 import { Remap } from '@utils/types'
-import type { HtmlTagPath } from './path'
-import type { HtmlProcessorState } from './process'
-import type { kTagPath } from './symbols'
+import type { HtmlTagPath } from './path.js'
+import type { HtmlProcessorState } from './process.js'
+import type { kTagPath } from './symbols.js'
 
 type Promisable<T> = T | PromiseLike<T>
 

@@ -1,6 +1,6 @@
 import { prompt } from '@utils/node/prompt'
 import { green } from 'kleur/colors'
-import { command } from '../../command'
+import { command } from '../../command.js'
 
 command(removeSecrets) //
   .option('--all', `[boolean] remove all secrets at once`)

@@ -1,4 +1,4 @@
-import { Cache } from './types'
+import { Cache } from './types.js'
 
 export async function forEach<State>(
   this: Cache<State>,

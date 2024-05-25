@@ -2,8 +2,8 @@ import { unwrapBuffer } from '@utils/node/buffer'
 import assert from 'assert'
 import fs from 'fs'
 import path from 'path'
-import { OutputBundle } from '../bundle/types'
-import { toSausPath } from './paths'
+import { OutputBundle } from '../bundle/types.js'
+import { toSausPath } from './paths.js'
 
 export function writeBundle(
   bundle: OutputBundle,

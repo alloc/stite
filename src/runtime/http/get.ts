@@ -1,11 +1,11 @@
 // HTTP helpers suitable for Node environments.
-import { globalCache } from '../cache/global'
-import { Cache } from '../cache/types'
-import { getCacheKey } from './cacheKey'
-import { debug } from './debug'
-import { http, HttpRequestOptions } from './http'
-import { responseCache } from './responseCache'
-import { Http, URL } from './types'
+import { globalCache } from '../cache/global.js'
+import { Cache } from '../cache/types.js'
+import { getCacheKey } from './cacheKey.js'
+import { debug } from './debug.js'
+import { http, HttpRequestOptions } from './http.js'
+import { responseCache } from './responseCache.js'
+import { Http, URL } from './types.js'
 
 export interface GetOptions extends Omit<HttpRequestOptions, 'body'> {}
 

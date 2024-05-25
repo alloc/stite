@@ -6,7 +6,7 @@ import fs from 'fs'
 import os from 'os'
 import path from 'path'
 import { Promisable } from 'type-fest'
-import { SausContext } from './context'
+import { SausContext } from './context.js'
 
 const publicDirs = new WeakMap<SausContext, PublicDir>()
 

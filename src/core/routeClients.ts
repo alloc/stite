@@ -3,7 +3,7 @@ import type { Route, RouteRenderer } from '@runtime/routeTypes'
 import { LazyPromise } from '@utils/LazyPromise'
 import { unwrapDefault } from '@utils/unwrapDefault'
 import endent from 'endent'
-import type { SausContext } from './context'
+import type { SausContext } from './context.js'
 
 export interface RouteClients {
   /** Route clients by virtual ID */

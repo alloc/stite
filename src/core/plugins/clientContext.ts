@@ -1,7 +1,7 @@
 import type { ClientConstants } from '@client/context'
 import path from 'path'
-import { Plugin } from '../core'
-import { clientDir } from '../paths'
+import { Plugin } from '../core.js'
+import { clientDir } from '../paths.js'
 
 const contextModuleId = path.join(clientDir, 'context.mjs')
 

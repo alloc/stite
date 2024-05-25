@@ -1,4 +1,4 @@
-import { InferRouteParams } from './routeTypes'
+import { InferRouteParams } from './routeTypes.js'
 
 const paramRegex = /(?:\/|^)([:*][^/]*?)(\?)?(?=[/.]|$)/g
 

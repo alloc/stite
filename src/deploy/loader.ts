@@ -1,7 +1,7 @@
 import { formatAsyncStack } from '@vm/formatAsyncStack'
-import { DeployContext, getDeployContext } from './context'
-import { setLogFunctions } from './logger'
-import type { DeployHookRef, DeployPlugin } from './types'
+import { DeployContext, getDeployContext } from './context.js'
+import { setLogFunctions } from './logger.js'
+import type { DeployHookRef, DeployPlugin } from './types.js'
 
 export async function loadDeployFile(context: DeployContext) {
   try {

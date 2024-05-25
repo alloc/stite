@@ -1,4 +1,4 @@
-import type { InlineBundleConfig } from '../bundle/context'
+import type { InlineBundleConfig } from '../bundle/context.js'
 
 export type DeployCommand = 'deploy' | 'secrets'
 

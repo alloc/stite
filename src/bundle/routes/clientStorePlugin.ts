@@ -2,7 +2,7 @@ import { Endpoint } from '@runtime/endpoint'
 import { defineRoutePlugin } from '@runtime/routePlugins'
 import etag from 'etag'
 import * as mime from 'mrmime'
-import { loadAsset, loadModule } from '../runtime/bundle/clientStore'
+import { loadAsset, loadModule } from '../runtime/bundle/clientStore.js'
 
 type Params = { wild: string }
 

@@ -3,8 +3,8 @@ import path from 'path'
 import { onDeploy } from 'saus/deploy'
 import { bindExec } from 'saus/node/bindExec'
 import { relativeToCwd } from 'saus/node/relativeToCwd'
-import { GitRepository, InitConfig } from './config'
-import { stashedRoots } from './stash'
+import { GitRepository, InitConfig } from './config.js'
+import { stashedRoots } from './stash.js'
 
 /**
  * Call this before producing any build artifacts

@@ -1,8 +1,8 @@
 import { Http } from '@runtime/http'
 import etag from 'etag'
 import * as mime from 'mrmime'
-import { connect } from './connect'
-import type { FileCache } from './fileCache'
+import { connect } from './connect.js'
+import type { FileCache } from './fileCache.js'
 
 export const serveCachedFiles =
   (cache: FileCache): connect.Middleware =>

@@ -1,7 +1,7 @@
 import { AnyToObject } from '@utils/types'
-import type { BufferLike } from './app/types'
-import type { CommonClientProps } from './clientTypes'
-import type { RouteModule, RouteParams } from './routeTypes'
+import type { BufferLike } from './app/types.js'
+import type { CommonClientProps } from './clientTypes.js'
+import type { RouteModule, RouteParams } from './routeTypes.js'
 
 /**
  * An isomorphic object describing an HTML request.

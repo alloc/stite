@@ -1,9 +1,9 @@
 import { resolve } from 'path'
-import type { SausCommand } from '../context'
-import { toSausPath } from '../paths'
-import { BundleConfig, SausConfig, UserConfig, vite } from '../vite'
-import { loadConfigDeps } from './configDeps'
-import { loadConfigFile } from './configFile'
+import type { SausCommand } from '../context.js'
+import { toSausPath } from '../paths.js'
+import { BundleConfig, SausConfig, UserConfig, vite } from '../vite.js'
+import { loadConfigDeps } from './configDeps.js'
+import { loadConfigFile } from './configFile.js'
 
 export type LoadedUserConfig = UserConfig & {
   saus: SausConfig & { bundle: BundleConfig }

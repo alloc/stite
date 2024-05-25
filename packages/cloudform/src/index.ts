@@ -6,7 +6,7 @@ import {
   getDeployContext,
 } from 'saus/deploy'
 import { isObject } from 'saus/utils/isObject'
-import secrets from './secrets'
+import secrets from './secrets.js'
 import {
   AttributeRef,
   ResourceBase,
@@ -15,7 +15,7 @@ import {
   StackTemplate,
 } from './types'
 
-const hook = addDeployHook(() => import('./hook'))
+const hook = addDeployHook(() => import('./hook.js'))
 addSecrets(useCloudFormation, secrets)
 
 export type StackOptions<Outputs extends object | void = any> = {

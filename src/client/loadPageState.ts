@@ -4,7 +4,7 @@ import { CommonClientProps } from '@runtime/clientTypes'
 import { getPageFilename } from '@utils/getPageFilename'
 import { AnyToObject } from '@utils/types'
 import { unwrapDefault } from '@utils/unwrapDefault'
-import { dynamicImport } from './dynamicImport'
+import { dynamicImport } from './dynamicImport.js'
 
 export function loadPageState<Props extends object = any>(
   pagePath: string,

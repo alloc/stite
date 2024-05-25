@@ -1,4 +1,4 @@
-import { Cache } from './types'
+import { Cache } from './types.js'
 
 /**
  * Traverse the given cache, removing any keys that match.

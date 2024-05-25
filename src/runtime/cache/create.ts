@@ -1,7 +1,7 @@
-import { access, get, has, load } from './access'
-import { clear } from './clear'
-import { forEach } from './forEach'
-import { Cache } from './types'
+import { access, get, has, load } from './access.js'
+import { clear } from './clear.js'
+import { forEach } from './forEach.js'
+import { Cache } from './types.js'
 
 export const createCache = <State = unknown>(): Cache<State> => ({
   listeners: {},

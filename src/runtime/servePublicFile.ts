@@ -1,8 +1,8 @@
 import fs from 'fs'
 import * as mime from 'mrmime'
 import path from 'path'
-import { RenderedFile } from './app'
-import { RuntimeConfig } from './config'
+import { RenderedFile } from './app/index.js'
+import { RuntimeConfig } from './config.js'
 
 export interface ServePublicFileOptions {
   /** @default runtimeConfig.publicDir */

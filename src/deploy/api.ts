@@ -13,11 +13,11 @@ import { success } from 'misty'
 import { startTask } from 'misty/task'
 import path from 'path'
 import yaml from 'yaml'
-import { loadDeployContext } from './context'
-import { debug } from './debug'
-import { loadDeployFile } from './loader'
-import { setLogFunctions } from './logger'
-import { DeployOptions } from './options'
+import { loadDeployContext } from './context.js'
+import { debug } from './debug.js'
+import { loadDeployFile } from './loader.js'
+import { setLogFunctions } from './logger.js'
+import { DeployOptions } from './options.js'
 import {
   getMissingTargets,
   getSavedTargets,
@@ -32,7 +32,7 @@ import {
   DeployTarget,
   RevertFn,
 } from './types'
-import { defineTargetId, omitEphemeral } from './utils'
+import { defineTargetId, omitEphemeral } from './utils.js'
 
 export { DeployOptions }
 

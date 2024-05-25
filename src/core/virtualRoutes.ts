@@ -1,7 +1,7 @@
 import { generateId } from '@utils/generateId'
 import endent from 'endent'
-import { SausContext } from './context'
-import { VirtualModule } from './plugins/moduleProvider'
+import { SausContext } from './context.js'
+import { VirtualModule } from './plugins/moduleProvider.js'
 
 export interface VirtualRoute {
   /** Route pattern used for matching HTTP requests */

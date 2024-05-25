@@ -1,5 +1,5 @@
-import { toExpirationTime } from '../cache/expiration'
-import { App, LoadedStateModule, RenderedFile } from './types'
+import { toExpirationTime } from '../cache/expiration.js'
+import { App, LoadedStateModule, RenderedFile } from './types.js'
 
 export function collectStateFiles(
   files: RenderedFile[],

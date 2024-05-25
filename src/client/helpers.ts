@@ -1,5 +1,5 @@
 export { describeHead } from './head'
 export { hydrate } from './hydrate'
-export { importState } from './importState'
+export { importState } from './importState.js'
 export { preCacheState } from './preCacheState'
 export { preloadModules } from './preloadModules'

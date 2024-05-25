@@ -1,5 +1,5 @@
-import { getDeployContext } from '../../deploy/context'
-import { DefinedSecrets } from '../types'
+import { getDeployContext } from '../../deploy/context.js'
+import { DefinedSecrets } from '../types.js'
 
 /**
  * Associate the given `fn` with a `defineSecrets` result,

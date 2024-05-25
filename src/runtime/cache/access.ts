@@ -2,10 +2,10 @@ import { AbortController } from '@utils/AbortController'
 import { klona } from '@utils/klona'
 import { noop } from '@utils/noop'
 import createDebug from 'debug'
-import { debug } from '../stateModules/debug'
-import { EntryContext } from './context'
-import { toExpirationTime } from './expiration'
-import { Cache } from './types'
+import { debug } from '../stateModules/debug.js'
+import { EntryContext } from './context.js'
+import { toExpirationTime } from './expiration.js'
+import { Cache } from './types.js'
 
 const debugCachePlugin = createDebug('saus:cachePlugin')
 

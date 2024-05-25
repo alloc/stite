@@ -3,7 +3,7 @@ import { getPagePath } from '@runtime/getPagePath'
 import { Route } from '@runtime/routeTypes'
 import { noop } from '@utils/noop'
 import { RequireAsync } from '@vm/types'
-import type { PageClient } from '../pageClient'
+import type { PageClient } from '../pageClient.js'
 
 interface Context {
   ssrRequire: RequireAsync

@@ -5,13 +5,13 @@ import {
   Selector,
   SelectorType,
 } from 'css-what'
-import { HtmlProcessorState } from './process'
+import { HtmlProcessorState } from './process.js'
 import {
   HtmlAttribute,
   HtmlTagPath,
   HtmlTagVisitor,
   HtmlVisitor,
-} from './types'
+} from './types.js'
 
 export type HtmlMatcher = (path: HtmlTagPath<any> | undefined) => boolean
 

@@ -1,4 +1,4 @@
-import { Cache } from './cache/types'
+import { Cache } from './cache/types.js'
 
 export function getLoadedStateOrThrow(
   cache: Cache,

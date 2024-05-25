@@ -1,6 +1,6 @@
-import { RouteLayout } from './layouts'
-import { RenderRequest } from './renderer'
-import { RETURN } from './tokens'
+import { RouteLayout } from './layouts.js'
+import { RenderRequest } from './renderer.js'
+import { RETURN } from './tokens.js'
 
 export async function renderHtml(
   layout: RouteLayout<any, any, any, string>,

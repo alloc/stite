@@ -1,4 +1,4 @@
-import { RouteParams, RoutesModule } from '../routeTypes'
+import { RouteParams, RoutesModule } from '../routeTypes.js'
 
 type RoutePathHandlers = {
   path: (path: string, params?: RouteParams) => void

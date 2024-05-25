@@ -3,8 +3,8 @@ import { compileModule } from '@vm/compileModule'
 import builtinModules from 'builtin-modules'
 import * as esbuild from 'esbuild'
 import path from 'path'
-import { vite } from '../vite'
-import { getViteFunctions } from './functions'
+import { vite } from '../vite.js'
+import { getViteFunctions } from './functions.js'
 
 /**
  * If you want to bundle some modules with Esbuild (instead of Rollup)

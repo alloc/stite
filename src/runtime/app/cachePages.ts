@@ -1,5 +1,5 @@
-import { Cache } from '../cache/types'
-import { App, RenderPageResult } from './types'
+import { Cache } from '../cache/types.js'
+import { App, RenderPageResult } from './types.js'
 
 export function cachePages(
   maxAge: number,

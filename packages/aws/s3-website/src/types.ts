@@ -1,5 +1,5 @@
 import type { CommonRequestHeaders } from 'saus/http'
-import { UserDeviceType } from './varyByDevice'
+import { UserDeviceType } from './varyByDevice.js'
 
 export interface BrotliConfig {
   /**

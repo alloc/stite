@@ -1,4 +1,4 @@
-import type { ParsedRoute } from './routeTypes'
+import type { ParsedRoute } from './routeTypes.js'
 
 export function parseRoutePath(path: string): ParsedRoute {
   let pattern = '',

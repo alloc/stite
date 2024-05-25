@@ -1,6 +1,6 @@
-import saus from './context'
-import { dynamicImport } from './dynamicImport'
-import { prependBase } from './prependBase'
+import saus from './context.js'
+import { dynamicImport } from './dynamicImport.js'
+import { prependBase } from './prependBase.js'
 
 /**
  * Preload a page's data into the global RAM cache.

@@ -1,7 +1,7 @@
 import { MagicString } from '@utils/magic-string'
 import path from 'path'
-import { vite } from '../core'
-import { bundleDir } from '../paths'
+import { vite } from '../core.js'
+import { bundleDir } from '../paths.js'
 
 /**
  * Allow `import('https://foo.com/bar.js')` calls to work as expected.

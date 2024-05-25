@@ -4,12 +4,16 @@ import type { Endpoint } from '@runtime/endpoint'
 import type { AbortSignal } from '@utils/AbortController'
 import { Merge } from 'type-fest'
 import * as vite from 'vite'
-import type { BundleOptions, OutputBundle, PageBundle } from '../bundle/types'
-import type { SausContext } from './context'
-import { ModuleInjection } from './injectModules'
-import type { PublicDirOptions, PublicFile } from './publicDir'
-import type { TestPlugin } from './testPlugin'
-import './vite/requireHook'
+import type {
+  BundleOptions,
+  OutputBundle,
+  PageBundle,
+} from '../bundle/types.js'
+import type { SausContext } from './context.js'
+import { ModuleInjection } from './injectModules.js'
+import type { PublicDirOptions, PublicFile } from './publicDir.js'
+import type { TestPlugin } from './testPlugin.js'
+import './vite/requireHook.js'
 
 export { vite }
 
@@ -209,7 +213,7 @@ declare module 'vite' {
      * You can't use `saus test` command until this is defined.
      */
     testFramework?: (
-      config: import('./vite').UserConfig
+      config: import('./vite.js').UserConfig
     ) => Promise<TestPlugin | { default: TestPlugin }>
     /**
      * Filter the stack trace from an SSR error so there's

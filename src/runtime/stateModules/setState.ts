@@ -1,7 +1,7 @@
-import { stateModulesByName } from '../cache/global'
-import type { Cache } from '../cache/types'
-import { getStateModuleKey } from '../getStateModuleKey'
-import { hydrateState } from '../stateModules/hydrate'
+import { stateModulesByName } from '../cache/global.js'
+import type { Cache } from '../cache/types.js'
+import { getStateModuleKey } from '../getStateModuleKey.js'
+import { hydrateState } from '../stateModules/hydrate.js'
 
 /**
  * State modules must call this when loaded by the client.

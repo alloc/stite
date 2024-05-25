@@ -1,1 +1,1 @@
-export * from './inline'
+export * from './inline.js'

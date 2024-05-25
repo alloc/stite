@@ -3,10 +3,10 @@ import {
   EnforcementPhase,
   findHtmlProcessor,
   processHtml,
-} from './process'
-import { kVisitorsArray } from './symbols'
-import { HtmlVisitor } from './types'
-import { bindVisitors, TraverseVisitor } from './visitors/bind'
+} from './process.js'
+import { kVisitorsArray } from './symbols.js'
+import { HtmlVisitor } from './types.js'
+import { TraverseVisitor, bindVisitors } from './visitors/bind.js'
 
 type TraverseHtmlHook = EnforcedHandler<
   [visitor: HtmlVisitor] | [visitors: HtmlVisitor[]]

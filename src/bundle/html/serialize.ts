@@ -1,5 +1,5 @@
-import { HtmlTagDescriptor } from './types'
-import { incrementIndent } from './utils'
+import { HtmlTagDescriptor } from './types.js'
+import { incrementIndent } from './utils.js'
 
 const unaryTags = new Set(['link', 'meta', 'base'])
 

@@ -1,6 +1,6 @@
 import type { Buffer } from '@utils/buffer'
-import { normalizeHeaders } from './normalizeHeaders'
-import { Http } from './types'
+import { normalizeHeaders } from './normalizeHeaders.js'
+import { Http } from './types.js'
 
 /**
  * An HTTP response received from the server.

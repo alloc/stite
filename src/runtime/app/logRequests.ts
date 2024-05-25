@@ -1,9 +1,9 @@
 import { Falsy } from '@utils/types'
 import * as kleur from 'kleur/colors'
-import { Endpoint } from '../endpoint'
-import { onRequest, onResponse } from '../endpointHooks'
-import type { Http } from '../http'
-import { setup } from '../setup'
+import { Endpoint } from '../endpoint.js'
+import { onRequest, onResponse } from '../endpointHooks.js'
+import type { Http } from '../http/index.js'
+import { setup } from '../setup.js'
 
 /**
  * Note that request/response hooks added by `logRequests` use a

@@ -1,6 +1,6 @@
 import { Promisable } from 'type-fest'
-import type { RouteLayout } from './layouts'
-import { getCurrentModule } from './ssrModules'
+import type { RouteLayout } from './layouts.js'
+import { getCurrentModule } from './ssrModules.js'
 
 export interface LayoutRenderer<RenderResult = any> {
   /** Stringify the SSR result of a layout's `render` method. */

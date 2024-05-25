@@ -1,5 +1,5 @@
-import { getDeployContext } from './context'
-import { RevertFn } from './types'
+import { getDeployContext } from './context.js'
+import { RevertFn } from './types.js'
 
 export function onRevert(revertFn: RevertFn) {
   const ctx = getDeployContext()

@@ -1,6 +1,6 @@
 import { klona as deepCopy } from '@utils/klona'
-import type { Cache } from '../cache/types'
-import type { StateModule } from '../stateModules'
+import type { Cache } from '../cache/types.js'
+import type { StateModule } from '../stateModules.js'
 
 /**
  * Hydrate the data served for an instance of the given state module.

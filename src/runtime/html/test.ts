@@ -1,5 +1,5 @@
-import { HtmlVisitor } from './types'
-import { bindVisitors } from './visitors/bind'
+import { HtmlVisitor } from './types.js'
+import { bindVisitors } from './visitors/bind.js'
 
 /** Used for testing purposes */
 export function traverse(html: string, visitors: HtmlVisitor | HtmlVisitor[]) {

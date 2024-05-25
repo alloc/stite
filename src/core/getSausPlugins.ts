@@ -1,5 +1,5 @@
-import { SausContext } from './context'
-import { SausPlugin, vite } from './vite'
+import { SausContext } from './context.js'
+import { SausPlugin, vite } from './vite.js'
 
 export async function getSausPlugins(
   context: SausContext,

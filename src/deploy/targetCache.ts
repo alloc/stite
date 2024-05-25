@@ -2,11 +2,11 @@ import exec from '@cush/exec'
 import { deployedEnv } from '@runtime/deployedEnv'
 import assert from 'assert'
 import { startTask } from 'misty/task'
-import { getDeployContext } from './context'
-import { debug } from './debug'
-import { YamlFile } from './files'
-import { DeployFile, DeployPlugin, DeployTarget } from './types'
-import { defineTargetId, omitEphemeral } from './utils'
+import { getDeployContext } from './context.js'
+import { debug } from './debug.js'
+import { YamlFile } from './files.js'
+import { DeployFile, DeployPlugin, DeployTarget } from './types.js'
+import { defineTargetId, omitEphemeral } from './utils.js'
 
 /** Saved targets before this index have been reused, removed, or moved. */
 let reusedIndex: number

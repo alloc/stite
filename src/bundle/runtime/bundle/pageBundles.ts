@@ -12,12 +12,12 @@ import { prependBase } from '@utils/base'
 import { getPageFilename } from '@utils/getPageFilename'
 import { isExternalUrl } from '@utils/isExternalUrl'
 import { Promisable } from 'type-fest'
-import { injectToBody, injectToHead } from '../../html/inject'
-import { HtmlTagDescriptor } from '../../html/types'
-import clientEntries from './clientEntries'
-import clientStyles from './clientStyles'
-import { context } from './context'
-import { injectDebugBase } from './debugBase'
+import { injectToBody, injectToHead } from '../../html/inject.js'
+import { HtmlTagDescriptor } from '../../html/types.js'
+import clientEntries from './clientEntries.js'
+import clientStyles from './clientStyles.js'
+import { context } from './context.js'
+import { injectDebugBase } from './debugBase.js'
 
 export const providePageBundles: App.Plugin = app => {
   const { config } = app

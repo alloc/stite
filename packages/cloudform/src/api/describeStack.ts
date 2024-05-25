@@ -1,9 +1,9 @@
 import createDebug from 'debug'
 import { dset } from 'dset'
-import secrets from '../secrets'
-import { Stack } from '../types'
-import { describeStackEvents } from './describeStackEvents'
-import { signedRequest } from './request'
+import secrets from '../secrets.js'
+import { Stack } from '../types.js'
+import { describeStackEvents } from './describeStackEvents.js'
+import { signedRequest } from './request.js'
 
 export interface DescribedStack {
   id?: string

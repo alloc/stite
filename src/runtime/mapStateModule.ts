@@ -1,4 +1,4 @@
-import type { StateModule } from './stateModules'
+import type { StateModule } from './stateModules.js'
 
 /**
  * Wrap a state module with a mapping function that

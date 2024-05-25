@@ -10,9 +10,9 @@ import { MagicString } from '@utils/magic-string'
 import { relativeToCwd } from '@utils/node/relativeToCwd'
 import { servedPathForFile } from '@utils/node/servedPathForFile'
 import {
+  SourceMap,
   loadSourceMap,
   resolveMapSources,
-  SourceMap,
 } from '@utils/node/sourceMap'
 import { plural } from '@utils/plural'
 import { compileEsm, exportsId, requireAsyncId } from '@vm/compileEsm'
@@ -24,9 +24,13 @@ import { bold, yellow } from 'kleur/colors'
 import { startTask } from 'misty/task'
 import { dirname, relative, resolve } from 'path'
 import * as rollup from 'rollup'
-import { BundleContext } from './context'
-import { findLiveBindings, LiveBinding, matchLiveBinding } from './liveBindings'
-import { RouteImports } from './routeImports'
+import { BundleContext } from './context.js'
+import {
+  LiveBinding,
+  findLiveBindings,
+  matchLiveBinding,
+} from './liveBindings.js'
+import { RouteImports } from './routeImports.js'
 
 export type IsolatedModuleMap = Record<string, IsolatedModule>
 export type IsolatedModule = {

@@ -1,6 +1,6 @@
 import { cyan, gray, green, red, yellow } from 'kleur/colors'
 import { startTask } from 'misty/task'
-import { DeployContext } from './context'
+import { DeployContext } from './context.js'
 
 export function setLogFunctions(
   ctx: DeployContext,

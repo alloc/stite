@@ -1,15 +1,15 @@
 import { MagicString } from '@utils/magic-string'
-import { onChange } from '../onChange'
-import { parseHtml } from '../parser'
-import { HtmlTagPath } from '../path'
-import { kVisitorsArray } from '../symbols'
+import { onChange } from '../onChange.js'
+import { parseHtml } from '../parser.js'
+import { HtmlTagPath } from '../path.js'
+import { kVisitorsArray } from '../symbols.js'
 import {
   HtmlDocument,
   HtmlTag,
   HtmlTextLike,
   HtmlVisitor,
   HtmlVisitorState,
-} from '../types'
+} from '../types.js'
 
 export type TraverseVisitor<
   State extends HtmlVisitor.BaseState = HtmlVisitorState

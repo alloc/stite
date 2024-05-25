@@ -1,4 +1,4 @@
-import { getDeployContext } from '../../deploy/context'
+import { getDeployContext } from '../../deploy/context.js'
 
 /**
  * ⚠︎ Never call this function manually!

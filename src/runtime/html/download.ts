@@ -8,12 +8,12 @@ import createDebug from 'debug'
 import fs from 'fs'
 import { startTask } from 'misty/task'
 import path from 'path'
-import { get, Http } from '../http'
-import { setup } from '../setup'
-import { EnforcementPhase } from './process'
-import { $ } from './selector'
-import { traverseHtml } from './traversal'
-import { HtmlDocument, HtmlVisitorState } from './types'
+import { get, Http } from '../http/index.js'
+import { setup } from '../setup.js'
+import { EnforcementPhase } from './process.js'
+import { $ } from './selector.js'
+import { traverseHtml } from './traversal.js'
+import { HtmlDocument, HtmlVisitorState } from './types.js'
 
 const debug = createDebug('saus:html:download')
 

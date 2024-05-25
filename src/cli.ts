@@ -1,7 +1,7 @@
 import cac from 'cac'
 import * as inspector from 'inspector'
-import * as actions from './cli/actions'
-import { useCommands } from './cli/command'
+import * as actions from './cli/actions/index.js'
+import { useCommands } from './cli/command.js'
 
 declare const globalThis: any
 if (inspector.url()) {

@@ -6,7 +6,7 @@ import builtinModules from 'builtin-modules'
 import fs from 'fs'
 import kleur from 'kleur'
 import path from 'path'
-import { BundleContext } from './context'
+import { BundleContext } from './context.js'
 
 type ExternalDictation = { external: boolean; msg?: string }
 type PreferExternal = vite.Plugin & {

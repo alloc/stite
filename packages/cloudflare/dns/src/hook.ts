@@ -2,8 +2,8 @@ import { createRequestFn, secrets } from '@saus/cloudflare-request'
 import { defineDeployHook } from 'saus/deploy'
 import { diffObjects } from 'saus/utils/diffObjects'
 import { pick } from 'saus/utils/pick'
-import { DnsRecord, DnsRecordList } from './types'
-import { toTable } from './utils'
+import { DnsRecord, DnsRecordList } from './types.js'
+import { toTable } from './utils.js'
 
 export interface DnsRecordsTarget {
   zoneId: string

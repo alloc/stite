@@ -2,13 +2,13 @@ import { serializeImports } from '@runtime/imports'
 import { callPlugins } from '@utils/callPlugins'
 import { generateId } from '@utils/generateId'
 import { klona } from '@utils/klona'
-import { SausContext } from './context'
+import { SausContext } from './context.js'
 import {
   createModuleProvider,
   ModuleProvider,
   VirtualModule,
 } from './plugins/moduleProvider'
-import { renderVirtualRoutes, VirtualRoute } from './virtualRoutes'
+import { renderVirtualRoutes, VirtualRoute } from './virtualRoutes.js'
 
 export interface VirtualImports {
   prepend: string[]

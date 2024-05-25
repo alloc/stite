@@ -1,5 +1,5 @@
-import type { RuntimeHook } from './config'
-import { routesModule } from './global'
+import type { RuntimeHook } from './config.js'
+import { routesModule } from './global.js'
 
 /**
  * Set up the runtime according to the given environment.

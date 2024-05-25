@@ -1,8 +1,8 @@
 import { getRawGitHubUrl } from '@utils/node/getRawGitHubUrl'
 import { JSONObject } from '@utils/types'
 import { ReadonlyDeep } from 'type-fest'
-import type { RuntimeConfig } from './config'
-import { http } from './http'
+import type { RuntimeConfig } from './config.js'
+import { http } from './http/index.js'
 
 export interface DeployedEnv {
   appVersion?: string

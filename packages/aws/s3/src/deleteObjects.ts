@@ -1,11 +1,11 @@
 import { parseXmlResponse, xml } from '@saus/aws-utils'
 import * as crypto from 'crypto'
 import { controlExecution } from 'saus/utils/controlExecution'
-import { formatAmzHeaders } from './api/headers'
-import { commonParamKeys } from './api/params'
-import { signedRequest } from './api/request'
-import { pickAllExcept } from './utils/pick'
-import { writeThrottler } from './utils/throttle'
+import { formatAmzHeaders } from './api/headers.js'
+import { commonParamKeys } from './api/params.js'
+import { signedRequest } from './api/request.js'
+import { pickAllExcept } from './utils/pick.js'
+import { writeThrottler } from './utils/throttle.js'
 
 export function deleteObjects(region: string) {
   return controlExecution(

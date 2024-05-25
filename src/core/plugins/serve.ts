@@ -10,9 +10,9 @@ import { streamToBuffer } from '@utils/streamToBuffer'
 import { stripHtmlSuffix } from '@utils/stripHtmlSuffix'
 import { IncomingMessage, ServerResponse } from 'http'
 import os from 'os'
-import { DevContext } from '../context'
-import { Plugin } from '../core'
-import { vite } from '../vite'
+import { DevContext } from '../context.js'
+import { Plugin } from '../core.js'
+import { vite } from '../vite.js'
 
 /**
  * The route functions are resolved before Vite middleware runs,

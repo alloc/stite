@@ -5,7 +5,7 @@ import type {
   Node,
   Program,
 } from 'estree'
-import type { IsolatedModuleMap } from './isolateRoutes'
+import type { IsolatedModuleMap } from './isolateRoutes.js'
 
 /**
  * Three types of live bindings:

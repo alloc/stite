@@ -16,7 +16,7 @@ import createDebug from 'debug'
 import etag from 'etag'
 import os from 'os'
 import path from 'path'
-import { createHotReload } from './hotReload'
+import { createHotReload } from './hotReload.js'
 
 const debug = createDebug('saus:dev')
 

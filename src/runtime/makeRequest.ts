@@ -1,9 +1,9 @@
 import { assignDefaults } from '@utils/assignDefaults'
 import { defer } from '@utils/defer'
-import { emptyHeaders } from './app/constants'
-import type { Endpoint } from './endpoint'
-import type { Http } from './http'
-import { ParsedUrl } from './url'
+import { emptyHeaders } from './app/constants.js'
+import type { Endpoint } from './endpoint.js'
+import type { Http } from './http/index.js'
+import { ParsedUrl } from './url.js'
 
 const emptyBody = Buffer.from(globalThis.Buffer.alloc(0).buffer)
 const emptyRead = async (encoding?: BufferEncoding) =>

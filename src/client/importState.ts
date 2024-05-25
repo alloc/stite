@@ -1,6 +1,6 @@
 import { globalCache } from '@runtime/cache/global'
-import { preCacheState } from './preCacheState'
-import { preHydrateCache } from './stateModules/hydrate'
+import { preCacheState } from './preCacheState.js'
+import { preHydrateCache } from './stateModules/hydrate.js'
 
 /**
  * Wait for these state modules to be hydrated.

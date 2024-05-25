@@ -3,12 +3,12 @@ import { MutableRuntimeConfig } from '@runtime/config'
 import { loadResponseCache, responseCache } from '@runtime/http/responseCache'
 import { makeRequestUrl } from '@runtime/makeRequest'
 import { parseUrl } from '@runtime/url'
-import { loadSourceMap, SourceMap } from '@utils/node/sourceMap'
+import { SourceMap, loadSourceMap } from '@utils/node/sourceMap'
 import { resolveStackTrace } from '@utils/node/stack'
-import { isMainThread, MessagePort } from 'worker_threads'
-import type { PageBundle, PageBundleOptions } from '../bundle/types'
-import { Multicast } from './multicast'
-import { runBundle } from './runBundle'
+import { MessagePort, isMainThread } from 'worker_threads'
+import type { PageBundle, PageBundleOptions } from '../bundle/types.js'
+import { Multicast } from './multicast.js'
+import { runBundle } from './runBundle.js'
 
 export interface BundleDescriptor {
   root: string

@@ -2,9 +2,9 @@ import { controlExecution } from '@utils/controlExecution'
 import { limitConcurrency } from '@utils/node/limitConcurrency'
 import { noop } from '@utils/noop'
 import type { ExtractProps, Promisable } from '@utils/types'
-import type { Route } from '../routeTypes'
-import type { ParsedUrl } from '../url'
-import type { App } from './types'
+import type { Route } from '../routeTypes.js'
+import type { ParsedUrl } from '../url.js'
+import type { App } from './types.js'
 
 type RenderFn = (url: ParsedUrl, route: Route, options?: any) => any
 

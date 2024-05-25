@@ -1,8 +1,8 @@
 import path from 'path'
-import { compileRoutesMap, routeMarker } from '../compileRoutesMap'
-import { bundleDir, clientDir } from '../paths'
-import { RouteClients } from '../routeClients'
-import { Plugin } from '../vite'
+import { compileRoutesMap, routeMarker } from '../compileRoutesMap.js'
+import { bundleDir, clientDir } from '../paths.js'
+import { RouteClients } from '../routeClients.js'
+import { Plugin } from '../vite.js'
 
 const clientRouteMapStubPath = path.join(clientDir, 'routes.mjs')
 const serverRouteMapStubPath = path.join(bundleDir, 'bundle/routes.mjs')

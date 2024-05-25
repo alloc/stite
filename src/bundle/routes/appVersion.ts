@@ -1,5 +1,5 @@
 import endent from 'endent'
-import { BundleContext } from '../context'
+import { BundleContext } from '../context.js'
 
 /**
  * When the `appVersion` bundle option is defined, this plugin will

@@ -6,7 +6,7 @@ import { green } from 'kleur/colors'
 import { success } from 'misty'
 import path from 'path'
 import { Promisable } from 'type-fest'
-import { scanPublicDir } from '../publicDir'
+import { scanPublicDir } from '../publicDir.js'
 
 export function copyPublicDir() {
   let plugins: readonly vite.Plugin[]

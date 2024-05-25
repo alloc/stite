@@ -1,5 +1,5 @@
-import type { PreviewOptions } from '../../preview/options'
-import { command } from '../command'
+import type { PreviewOptions } from '../../preview/options.js'
+import { command } from '../command.js'
 
 command(preview)
   .option('--host [host]', `[string] specify hostname`)
@@ -9,7 +9,7 @@ command(preview)
   .option('--open [path]', `[boolean | string] open browser on startup`)
 
 export async function preview(options: PreviewOptions) {
-  const { startPreviewServer } = await import('../../preview/api.js')
+  const { startPreviewServer } = await import('../../preview/api.js.js')
   const server = await startPreviewServer(options)
   server.printUrls()
 }

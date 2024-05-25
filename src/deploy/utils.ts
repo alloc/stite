@@ -1,6 +1,6 @@
 import { omitKeys } from '@utils/keys'
 import { toObjectHash } from '@utils/objectHash'
-import { DeployPlugin, DeployTarget, DeployTargetId } from './types'
+import { DeployPlugin, DeployTarget, DeployTargetId } from './types.js'
 
 export function omitEphemeral(
   state: Record<string, any>,

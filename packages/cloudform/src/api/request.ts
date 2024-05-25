@@ -1,5 +1,5 @@
 import { createAmzRequestFn } from '@saus/aws-utils'
-import { CloudFormation } from './types'
+import { CloudFormation } from './types.js'
 
 export const signedRequest = createAmzRequestFn<{
   CreateStack: {

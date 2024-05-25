@@ -1,8 +1,8 @@
 import { parseXmlResponse } from '@saus/aws-utils'
 import { controlExecution } from 'saus/utils/controlExecution'
-import { paramsToHeaders } from './api/headers'
-import { signedRequest } from './api/request'
-import { writeThrottler } from './utils/throttle'
+import { paramsToHeaders } from './api/headers.js'
+import { signedRequest } from './api/request.js'
+import { writeThrottler } from './utils/throttle.js'
 
 export function copyObject(region: string) {
   return controlExecution(

@@ -4,12 +4,12 @@ import { loadSourceMap } from '@utils/node/sourceMap'
 import { resolveStackTrace } from '@utils/node/stack'
 import { pickAllExcept } from '@utils/pick'
 import fs from 'fs'
-import { Endpoint } from '../../endpoint'
-import { Http } from '../../http'
-import { DeclaredHeaders } from '../../http/headers'
-import { makeRequest } from '../../makeRequest'
-import { Route } from '../../routeTypes'
-import { App } from '../types'
+import { Endpoint } from '../../endpoint.js'
+import { DeclaredHeaders } from '../../http/headers.js'
+import { Http } from '../../http/index.js'
+import { makeRequest } from '../../makeRequest.js'
+import { Route } from '../../routeTypes.js'
+import { App } from '../types.js'
 
 export const wrapEndpoints =
   (app: App, ctx: App.Context): App['callEndpoints'] =>

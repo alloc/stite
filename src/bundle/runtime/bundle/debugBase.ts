@@ -1,5 +1,5 @@
 import { createHtmlResolver, createVisitor } from '@runtime/html'
-import config from './config'
+import config from './config.js'
 
 /**
  * Scan the `<body>` tree for internal links to be rewritten

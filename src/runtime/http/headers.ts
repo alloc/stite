@@ -1,9 +1,9 @@
 import { pick } from '@utils/pick'
 import { PickResult } from '@utils/types'
 import { CamelCase } from 'type-fest'
-import { normalizeHeaders } from './normalizeHeaders'
-import { Http } from './types'
-import { writeHeaders } from './writeHeaders'
+import { normalizeHeaders } from './normalizeHeaders.js'
+import { Http } from './types.js'
+import { writeHeaders } from './writeHeaders.js'
 
 /**
  * This function provides a builder for defining headers in a more

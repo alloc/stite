@@ -2,7 +2,7 @@ import { globalCache, stateModulesByName } from '@runtime/cache/global'
 import type { Cache } from '@runtime/cache/types'
 import { getStateModuleKey } from '@runtime/getStateModuleKey'
 import { serveCache } from '@runtime/stateModules/serve'
-import { hydrateState, preHydrateCache } from './hydrate'
+import { hydrateState, preHydrateCache } from './hydrate.js'
 
 /**
  * State modules must call this when loaded by the client.

@@ -1,6 +1,6 @@
 import { Buffer } from '@utils/buffer'
 import { Simplify, UnionToIntersection } from 'type-fest'
-import { unwrapBody } from './unwrapBody'
+import { unwrapBody } from './unwrapBody.js'
 
 export type Body =
   | { buffer: Buffer }

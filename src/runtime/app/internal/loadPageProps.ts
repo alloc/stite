@@ -3,20 +3,20 @@ import { ascendBranch } from '@utils/ascendBranch'
 import { prependBase } from '@utils/base'
 import { noop } from '@utils/noop'
 import createDebug from 'debug'
-import { globalCache } from '../../cache/global'
-import { CommonClientProps } from '../../clientTypes'
-import { Endpoint } from '../../endpoint'
-import { makeRequest, makeRequestUrl } from '../../makeRequest'
-import { BareRoute, RouteIncludeOption } from '../../routeTypes'
-import { StateModule } from '../../stateModules'
-import { hydrateState } from '../../stateModules/hydrate'
-import { serveState } from '../../stateModules/serve'
+import { globalCache } from '../../cache/global.js'
+import { CommonClientProps } from '../../clientTypes.js'
+import { Endpoint } from '../../endpoint.js'
+import { makeRequest, makeRequestUrl } from '../../makeRequest.js'
+import { BareRoute, RouteIncludeOption } from '../../routeTypes.js'
+import { StateModule } from '../../stateModules.js'
+import { hydrateState } from '../../stateModules/hydrate.js'
+import { serveState } from '../../stateModules/serve.js'
 import {
   App,
   CommonServerProps,
   LoadedStateModule,
   PagePropsLoader,
-} from '../types'
+} from '../types.js'
 
 const debug = createDebug('saus:pages')
 

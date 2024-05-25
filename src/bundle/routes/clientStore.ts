@@ -1,7 +1,7 @@
 import { bundleDir } from '@/paths'
 import { injectRoutes } from '@/virtualRoutes'
 import { resolve } from 'path'
-import { BundleContext } from '../context'
+import { BundleContext } from '../context.js'
 
 export function injectClientStoreRoute(context: BundleContext) {
   injectRoutes(context, [

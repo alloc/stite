@@ -1,8 +1,8 @@
 import { klona as deepCopy } from '@utils/klona'
-import { Cache } from '../cache/types'
-import { getLoadedStateOrThrow } from '../getLoadedStateOrThrow'
-import { getStateModuleKey } from '../getStateModuleKey'
-import type { StateModule } from '../stateModules'
+import { Cache } from '../cache/types.js'
+import { getLoadedStateOrThrow } from '../getLoadedStateOrThrow.js'
+import { getStateModuleKey } from '../getStateModuleKey.js'
+import type { StateModule } from '../stateModules.js'
 
 /**
  * Unwrap a state module with the given arguments. \

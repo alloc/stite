@@ -1,5 +1,5 @@
 import { SourceMap } from '@utils/node/sourceMap'
-import { Plugin, vite } from '../vite'
+import { Plugin, vite } from '../vite.js'
 
 export interface VirtualModule {
   id: string

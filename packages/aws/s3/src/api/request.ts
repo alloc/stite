@@ -1,5 +1,5 @@
 import { createAmzRequestFn } from '@saus/aws-utils'
-import { S3 } from './types'
+import { S3 } from './types.js'
 
 export const signedRequest = (region: string) =>
   createAmzRequestFn<{

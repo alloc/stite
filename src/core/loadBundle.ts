@@ -21,10 +21,10 @@ import {
   ClientChunk,
   OutputBundle,
 } from '../bundle/types'
-import { DeployContext, getDeployContext } from '../deploy'
-import { getBundleHash } from './getBundleHash'
-import { vite } from './vite'
-import { writeBundle } from './writeBundle'
+import { DeployContext, getDeployContext } from '../deploy.js'
+import { getBundleHash } from './getBundleHash.js'
+import { vite } from './vite.js'
+import { writeBundle } from './writeBundle.js'
 
 type RuntimeConfigFn = (context: BundleContext) => Partial<RuntimeConfig>
 
@@ -146,7 +146,7 @@ export async function loadBundle({
       })
     }
   } else {
-    const { bundle } = await import('../bundle/api.js')
+    const { bundle } = await import('../bundle/api.js.js')
     await options.onBundleStart?.(bundleOptions)
     bundleResult = await bundle(context, bundleOptions)
   }

@@ -4,9 +4,9 @@ import { createAsyncRequire, RequireAsyncConfig } from '@vm/asyncRequire'
 import { dedupeNodeResolve } from '@vm/dedupeNodeResolve'
 import { RequireAsync } from '@vm/types'
 import fs from 'fs'
-import { SausContext, SausEventEmitter } from './context'
-import { compileNodeModule } from './vite/compileNodeModule'
-import { compileSsrModule } from './vite/compileSsrModule'
+import { SausContext, SausEventEmitter } from './context.js'
+import { compileNodeModule } from './vite/compileNodeModule.js'
+import { compileSsrModule } from './vite/compileSsrModule.js'
 
 export function getRequireFunctions(context: SausContext): {
   require: RequireAsync

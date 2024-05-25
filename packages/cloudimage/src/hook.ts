@@ -3,12 +3,12 @@ import { defineDeployHook } from 'saus/deploy'
 import { http } from 'saus/http'
 import { rewriteKeys } from 'saus/utils/keys'
 import { murmurHash } from 'saus/utils/murmur3'
-import { Config, configToPayload } from './config'
-import secrets from './secrets'
-import { snakeCase } from './snakeCase'
-import { LoginResponse } from './types/login'
-import { Payload } from './types/payload'
-import { SessionResponse } from './types/session'
+import { Config, configToPayload } from './config.js'
+import secrets from './secrets.js'
+import { snakeCase } from './snakeCase.js'
+import { LoginResponse } from './types/login.js'
+import { Payload } from './types/payload.js'
+import { SessionResponse } from './types/session.js'
 
 export default defineDeployHook(ctx => {
   let auth: Auth

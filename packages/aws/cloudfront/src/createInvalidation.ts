@@ -1,6 +1,6 @@
 import { xml } from '@saus/aws-utils'
 import { joinUrl } from 'saus/utils/joinUrl'
-import { signedRequest } from './api/request'
+import { signedRequest } from './api/request.js'
 
 export function createInvalidation(region: string) {
   return signedRequest(region).action('CreateInvalidation', {

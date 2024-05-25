@@ -2,10 +2,10 @@ import type { Buffer } from '@utils/buffer'
 import type { httpMethods } from '@utils/httpMethods'
 import type { AnyToObject, Falsy, Promisable } from '@utils/types'
 import { Simplify, UnionToIntersection } from 'type-fest'
-import type { App } from './app/types'
-import type { DeclaredHeaders, Http } from './http'
-import type { InferRouteParams, Route, RouteParams } from './routeTypes'
-import type { ParsedUrl } from './url'
+import type { App } from './app/types.js'
+import type { DeclaredHeaders, Http } from './http/index.js'
+import type { InferRouteParams, Route, RouteParams } from './routeTypes.js'
+import type { ParsedUrl } from './url.js'
 
 export interface Endpoint<Params extends object = any>
   extends Endpoint.Function<AnyToObject<Params, RouteParams>> {

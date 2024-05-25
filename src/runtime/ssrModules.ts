@@ -1,6 +1,6 @@
 import { noop } from '@utils/noop'
 import createDebug from 'debug'
-import { createCache } from './cache/create'
+import { createCache } from './cache/create.js'
 
 const debug = createDebug('saus:ssr')
 

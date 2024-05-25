@@ -1,5 +1,5 @@
-import { BASE_URL } from './baseUrl'
-import { injectLinkTag } from './head'
+import { BASE_URL } from './baseUrl.js'
+import { injectLinkTag } from './head.js'
 
 export function preloadModules(urls: string[]) {
   for (const url of urls)

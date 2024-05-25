@@ -1,8 +1,8 @@
 import { babel, t } from '@utils/babel'
 import { prependBase } from '@utils/base'
 import endent from 'endent'
-import { SausContext } from './context'
-import { clientDir } from './paths'
+import { SausContext } from './context.js'
+import { clientDir } from './paths.js'
 
 export const routeMarker = '__sausRoute'
 

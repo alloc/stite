@@ -1,6 +1,6 @@
 import { prependBase } from '@utils/base'
-import { dataToEsm } from '../../dataToEsm'
-import { App } from '../types'
+import { dataToEsm } from '../../dataToEsm.js'
+import { App } from '../types.js'
 
 export const getStateModuleFactory = (
   ctx: App.Context

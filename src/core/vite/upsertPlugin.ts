@@ -1,4 +1,4 @@
-import { Plugin } from '../vite'
+import { Plugin } from '../vite.js'
 
 const order = ['pre', undefined, 'post']
 

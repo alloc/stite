@@ -1,5 +1,5 @@
 import { PartialDeep } from 'type-fest'
-import { Payload } from './types/payload'
+import { Payload } from './types/payload.js'
 
 export const configToPayload = (config: Config): PartialDeep<Payload.Data> => ({
   originPrefix: {

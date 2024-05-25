@@ -1,6 +1,6 @@
 import { servedPathForFile } from '@utils/node/servedPathForFile'
 import * as esModuleLexer from 'es-module-lexer'
-import { BundleContext } from './context'
+import { BundleContext } from './context.js'
 
 export type RouteImports = Map<
   esModuleLexer.ImportSpecifier,

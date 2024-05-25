@@ -1,11 +1,11 @@
 import { joinUrl } from '@utils/joinUrl'
-import { Endpoint } from '../endpoint'
-import { requestHook, responseHook } from './hooks'
-import { startRequest } from './internal/startRequest'
-import { urlToHttpOptions } from './internal/urlToHttpOptions'
-import { normalizeHeaders } from './normalizeHeaders'
-import { Http, URL } from './types'
-import { writeBody } from './writeBody'
+import { Endpoint } from '../endpoint.js'
+import { requestHook, responseHook } from './hooks.js'
+import { startRequest } from './internal/startRequest.js'
+import { urlToHttpOptions } from './internal/urlToHttpOptions.js'
+import { normalizeHeaders } from './normalizeHeaders.js'
+import { Http, URL } from './types.js'
+import { writeBody } from './writeBody.js'
 
 type ForwardedKeys =
   | 'agent'

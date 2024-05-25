@@ -1,5 +1,5 @@
 import { Promisable } from 'type-fest'
-import { RenderRequest } from './renderer'
+import { RenderRequest } from './renderer.js'
 
 /**
  * UI framework plugins can extend this interface with declaration

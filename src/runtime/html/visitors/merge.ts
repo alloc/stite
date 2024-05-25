@@ -1,8 +1,8 @@
 import { limitTime } from '@utils/limitTime'
-import { HtmlTagPath } from '../path'
-import { HtmlProcessorState } from '../process'
-import { kRemovedNode } from '../symbols'
-import { HtmlVisitor, HtmlVisitorState } from '../types'
+import { HtmlTagPath } from '../path.js'
+import { HtmlProcessorState } from '../process.js'
+import { kRemovedNode } from '../symbols.js'
+import { HtmlVisitor, HtmlVisitorState } from '../types.js'
 
 const rootOnlyTags = ['head', 'body']
 const headOnlyTags = ['base', 'link', 'meta', 'style', 'title']

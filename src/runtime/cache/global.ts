@@ -1,5 +1,5 @@
-import type { StateModule } from '../stateModules'
-import { createCache } from './create'
+import type { StateModule } from '../stateModules.js'
+import { createCache } from './create.js'
 
 /**
  * All state in the global cache is meant to be used when rendering.

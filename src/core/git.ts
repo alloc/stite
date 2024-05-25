@@ -3,7 +3,7 @@ import { readFileSync } from 'fs'
 import os from 'os'
 import path from 'path'
 import * as yaml from 'yaml'
-import { ResolvedConfig } from './vite'
+import { ResolvedConfig } from './vite.js'
 
 export async function resolveGitHubCreds(context: {
   root: string

@@ -1,4 +1,4 @@
-import type { Route, RoutesModule } from './routeTypes'
+import type { Route, RoutesModule } from './routeTypes.js'
 
 export let routesModule: RoutesModule
 

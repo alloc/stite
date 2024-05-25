@@ -1,9 +1,14 @@
 import { escape } from '@utils/escape'
 import { MagicString } from '@utils/magic-string'
-import { HtmlProcessorState } from './process'
-import { kRemovedNode, kTagPath } from './symbols'
-import { HtmlDocument, HtmlTag, HtmlVisitor, HtmlVisitorState } from './types'
-import { mergeVisitors } from './visitors/merge'
+import { HtmlProcessorState } from './process.js'
+import { kRemovedNode, kTagPath } from './symbols.js'
+import {
+  HtmlDocument,
+  HtmlTag,
+  HtmlVisitor,
+  HtmlVisitorState,
+} from './types.js'
+import { mergeVisitors } from './visitors/merge.js'
 
 const noop = () => {}
 

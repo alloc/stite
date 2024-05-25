@@ -1,6 +1,6 @@
 import { gray, green, yellow } from 'kleur/colors'
-import { askForSecrets } from '../../../secrets/prompt'
-import { command } from '../../command'
+import { askForSecrets } from '../../../secrets/prompt.js'
+import { command } from '../../command.js'
 
 command(addSecrets) //
 

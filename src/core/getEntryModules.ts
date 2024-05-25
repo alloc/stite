@@ -1,5 +1,5 @@
 import { dedupe } from '@utils/dedupe'
-import { SausContext } from './context'
+import { SausContext } from './context.js'
 
 export async function getEntryModules(context: SausContext) {
   const routes = [...context.routes]

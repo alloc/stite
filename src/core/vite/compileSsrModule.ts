@@ -1,15 +1,15 @@
 import { cleanUrl } from '@utils/cleanUrl'
 import { isPackageRef } from '@utils/isPackageRef'
 import { servedPathForFile } from '@utils/node/servedPathForFile'
+import { ImporterSet } from '@vm/ImporterSet'
 import { importAsyncId, importMetaId, requireAsyncId } from '@vm/compileEsm'
 import { compileModule } from '@vm/compileModule'
-import { ImporterSet } from '@vm/ImporterSet'
 import { isLiveModule } from '@vm/isLiveModule'
 import { CompiledModule } from '@vm/types'
 import { Module } from 'module'
 import path from 'path'
-import { SausContext } from '../context'
-import { checkPublicFile } from './checkPublicFile'
+import { SausContext } from '../context.js'
+import { checkPublicFile } from './checkPublicFile.js'
 
 export async function compileSsrModule(
   id: string,

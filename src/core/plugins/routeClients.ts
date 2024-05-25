@@ -7,9 +7,9 @@ import { RuntimeConfig } from '@runtime/config'
 import { renderPageScript } from '@runtime/renderPageScript'
 import { prependBase } from '@utils/base'
 import { getPageFilename } from '@utils/getPageFilename'
-import { DevContext } from '../context'
-import { RouteClients } from '../routeClients'
-import { renderRouteEntry } from '../routeEntries'
+import { DevContext } from '../context.js'
+import { RouteClients } from '../routeClients.js'
+import { renderRouteEntry } from '../routeEntries.js'
 
 /**
  * This plugin is responsible for serving the generated client

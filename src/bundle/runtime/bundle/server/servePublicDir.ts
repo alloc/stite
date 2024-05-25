@@ -4,9 +4,9 @@ import {
 } from '@runtime/servePublicFile'
 import etag from 'etag'
 import { gray } from 'kleur/colors'
-import runtimeConfig from '../config'
-import { connect } from './connect'
-import { debug } from './debug'
+import runtimeConfig from '../config.js'
+import { connect } from './connect.js'
+import { debug } from './debug.js'
 
 type Options = ServePublicFileOptions & {
   /**

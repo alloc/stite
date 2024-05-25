@@ -12,16 +12,16 @@ import { noop } from '@utils/noop'
 import etag from 'etag'
 import kleur from 'kleur'
 import path from 'path'
-import { BundleContext } from '../bundle/context'
-import { ClientData, compileClients } from './clients'
-import { IsolatedModuleMap, isolateRoutes } from './isolateRoutes'
-import type { BundleOptions } from './options'
-import { resolveRouteImports } from './routeImports'
-import { injectAppVersionRoute } from './routes/appVersion'
-import { injectClientStoreRoute } from './routes/clientStore'
-import type { ClientEntries } from './runtime/bundle/clientEntries'
-import { compileServerBundle } from './ssrBundle'
-import type { ClientChunk, OutputBundle } from './types'
+import { BundleContext } from '../bundle/context.js'
+import { ClientData, compileClients } from './clients.js'
+import { IsolatedModuleMap, isolateRoutes } from './isolateRoutes.js'
+import type { BundleOptions } from './options.js'
+import { resolveRouteImports } from './routeImports.js'
+import { injectAppVersionRoute } from './routes/appVersion.js'
+import { injectClientStoreRoute } from './routes/clientStore.js'
+import type { ClientEntries } from './runtime/bundle/clientEntries.js'
+import { compileServerBundle } from './ssrBundle.js'
+import type { ClientChunk, OutputBundle } from './types.js'
 
 export async function bundle(
   context: BundleContext,
@@ -161,9 +161,9 @@ function injectClientData(
   context: BundleContext
 ) {
   const clientAssets =
-    {} as typeof import('./runtime/bundle/clientAssets').default
+    {} as typeof import('./runtime/bundle/clientAssets.js').default
   const clientModules =
-    {} as typeof import('./runtime/bundle/clientModules').default
+    {} as typeof import('./runtime/bundle/clientModules.js').default
 
   const { clientStore } = context.bundle
   if (clientStore !== 'external') {

@@ -1,4 +1,4 @@
-import { debug } from './debug'
+import { debug } from './debug.js'
 export interface PluginCache<Entry, T extends { name: string }> {
   get: (entry: Entry, name?: string) => Promise<T | undefined>
   load: (entry: Entry, name?: string) => Promise<T>

@@ -1,8 +1,8 @@
-import { createCache } from '../cache/create'
-import { Cache } from '../cache/types'
-import { getStateModuleKey } from '../getStateModuleKey'
-import type { StateModule } from '../stateModules'
-import { debug } from './debug'
+import { createCache } from '../cache/create.js'
+import { Cache } from '../cache/types.js'
+import { getStateModuleKey } from '../getStateModuleKey.js'
+import type { StateModule } from '../stateModules.js'
+import { debug } from './debug.js'
 
 interface ServeStatePromise<State>
   extends globalThis.Promise<StateModule.CacheEntry<State>> {

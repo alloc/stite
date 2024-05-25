@@ -3,10 +3,10 @@ import { relativeToCwd } from '@utils/node/relativeToCwd'
 import { plural } from '@utils/plural'
 import { green } from 'kleur/colors'
 import { join } from 'path'
-import { SausCommand } from '../context'
-import { findConfigFiles } from '../findConfigFiles'
-import { vite } from '../vite'
-import { loadConfigFile } from './configFile'
+import { SausCommand } from '../context.js'
+import { findConfigFiles } from '../findConfigFiles.js'
+import { vite } from '../vite.js'
+import { loadConfigFile } from './configFile.js'
 
 /**
  * Dependencies in `node_modules` can set a `vite.config.js` file

@@ -2,7 +2,7 @@ import { baseToRegex } from '@utils/base'
 import { joinUrl } from '@utils/joinUrl'
 import { AnyToObject } from '@utils/types'
 import { URLSearchParams } from 'url'
-import type { RouteParams } from './routeTypes'
+import type { RouteParams } from './routeTypes.js'
 
 const rawUrlRE = /^(\/[^?]*)(?:\?(.+)?)?$/
 

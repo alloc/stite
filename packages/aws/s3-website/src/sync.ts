@@ -6,8 +6,8 @@ import { DeployContext } from 'saus/deploy'
 import { wrapBody } from 'saus/http'
 import { murmurHash } from 'saus/utils/murmur3'
 import { plural } from 'saus/utils/plural'
-import { WebsiteConfig } from './config'
-import secrets from './secrets'
+import { WebsiteConfig } from './config.js'
+import secrets from './secrets.js'
 
 type AssetList = string[]
 type ContentHash = number

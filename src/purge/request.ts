@@ -1,5 +1,5 @@
 import { getPageFilename } from '@utils/getPageFilename'
-import { PurgeOptions, PurgeRequest } from './types'
+import { PurgeOptions, PurgeRequest } from './types.js'
 
 export function makePurgeRequest(
   trigger: PurgeRequest['trigger'],

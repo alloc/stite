@@ -3,8 +3,8 @@ import type { Cache } from '@runtime/cache/types'
 import { getStateModuleKey } from '@runtime/getStateModuleKey'
 import type { StateModule } from '@runtime/stateModules'
 import { sortObjects } from '@utils/sortObjects'
-import saus from '../context'
-import { prependBase } from '../prependBase'
+import saus from '../context.js'
+import { prependBase } from '../prependBase.js'
 
 export const serveCache = createCache()
 

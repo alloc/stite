@@ -17,9 +17,9 @@ import { findPackage } from '@utils/node/findPackage'
 import { toInlineSourceMap } from '@utils/node/sourceMap'
 import path from 'path'
 import posixPath from 'path/posix'
-import { injectClientPreloads } from './clientPreloads'
-import { clientRedirects } from './moduleRedirects'
-import { ClientAsset, ClientChunk } from './types'
+import { injectClientPreloads } from './clientPreloads.js'
+import { clientRedirects } from './moduleRedirects.js'
+import { ClientAsset, ClientChunk } from './types.js'
 
 type OutputArray = vite.RollupOutput['output']
 type OutputChunk = OutputArray[0]
@@ -86,7 +86,11 @@ export async function compileClients(
   // debug('Resolving "build" config for client bundle')
   config = await context.resolveConfig({
     plugins: [
-      debugForbiddenImports(['vite', './core/index.mjs', './core/context.mjs']),
+      debugForbiddenImports([
+        'vite',
+        './core/index.mjs.js',
+        './core/context.mjs',
+      ]),
       clientModules.provider,
       moduleRedirection(clientRedirects),
       routesPlugin(),

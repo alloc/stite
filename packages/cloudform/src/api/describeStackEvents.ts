@@ -1,6 +1,6 @@
-import secrets from '../secrets'
-import { Stack } from '../types'
-import { signedRequest } from './request'
+import secrets from '../secrets.js'
+import { Stack } from '../types.js'
+import { signedRequest } from './request.js'
 
 export async function describeStackEvents(stack: Stack) {
   if (!stack.id) {

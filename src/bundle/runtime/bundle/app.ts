@@ -4,12 +4,12 @@ import { loadDeployedEnv } from '@runtime/deployedEnv'
 import { defineEndpoint } from '@runtime/endpoint'
 import { setRequestMetadata } from '@runtime/requestMetadata'
 import { ssrClearCache, ssrImport } from '@runtime/ssrModules'
-import { prependBase } from '@utils/base'
 import { LazyPromise } from '@utils/LazyPromise'
-import config from './config'
-import { context } from './context'
-import { injectSausClient } from './injectSausClient'
-import { providePageBundles } from './pageBundles'
+import { prependBase } from '@utils/base'
+import config from './config.js'
+import { context } from './context.js'
+import { injectSausClient } from './injectSausClient.js'
+import { providePageBundles } from './pageBundles.js'
 
 // Allow `ssrImport("saus/client")` outside page rendering.
 injectSausClient()

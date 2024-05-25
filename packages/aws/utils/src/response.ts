@@ -1,8 +1,8 @@
 import { Http } from 'saus/http'
 import { rewriteObjectKeys } from 'saus/utils/keys'
-import { camelize } from './utils'
-import { xml } from './xml'
-import { XmlParserOptions } from './xml/parse'
+import { camelize } from './utils.js'
+import { xml } from './xml.js'
+import { XmlParserOptions } from './xml/parse.js'
 
 const xmlOptionsMap = new WeakMap<Http.Response, XmlParserOptions>()
 const xmlParsedMap = new WeakMap<XmlParserOptions, any>()
