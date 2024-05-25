@@ -1,5 +1,5 @@
 import os from 'os'
-import { ExecutionGateContext } from '../controlExecution'
+import { ExecutionGateContext } from '../controlExecution.js'
 
 const cpuCount = os.cpus().length
 

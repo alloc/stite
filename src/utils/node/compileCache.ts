@@ -1,7 +1,10 @@
 import fs from 'fs'
 import path from 'path'
-import { murmurHash } from '../murmur3'
-import { loadFileMappings, saveFileMappings } from './compileCache/fileMappings'
+import { murmurHash } from '../murmur3.js'
+import {
+  loadFileMappings,
+  saveFileMappings,
+} from './compileCache/fileMappings.js'
 
 /**
  * For caching compiled files on disk by the hash of their

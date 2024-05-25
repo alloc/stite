@@ -1,7 +1,7 @@
-import { SourceMapConsumer } from 'source-map'
 import { resolve } from 'path'
-import { StackFrame } from '../../parseStackTrace'
-import { SourceMap } from '../sourceMap'
+import { SourceMapConsumer } from 'source-map'
+import { StackFrame } from '../../parseStackTrace.js'
+import { SourceMap } from '../sourceMap.js'
 
 const consumers = new WeakMap<SourceMap, SourceMapConsumer>()
 

@@ -1,1 +1,1 @@
-export * from './src/convert'
+export * from './src/convert.js'

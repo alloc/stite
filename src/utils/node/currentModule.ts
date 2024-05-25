@@ -1,4 +1,4 @@
-import { getStackFrame } from './stack/getStackFrame'
+import { getStackFrame } from './stack/getStackFrame.js'
 
 /**
  * Used by the `route` function to resolve the entry module ID of a

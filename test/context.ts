@@ -3,7 +3,7 @@ import { injectRoutesModule } from '@/virtualRoutes'
 import { injectNodeModule } from '@/vm'
 import endent from 'endent'
 import { resolve } from 'path'
-import { BuildContext, loadBundleContext } from '../src/bundle/context'
+import { BuildContext, loadBundleContext } from '../src/bundle/context.js'
 import { setConfigFile } from './config'
 
 export async function loadTestContext(config: { root: string }) {

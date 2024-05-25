@@ -47,7 +47,7 @@ export async function bundle(outFile: string, options: BundleFlags) {
   }
 
   if (options.load || options.reload) {
-    const { loadBundle } = await import('../../core/loadBundle.js.js')
+    const { loadBundle } = await import('../../core/loadBundle.js')
     const bundle = await loadBundle({
       config: viteOptions,
       bundle: bundleOptions,
@@ -73,8 +73,8 @@ export async function bundle(outFile: string, options: BundleFlags) {
       viteOptions.logLevel = 'silent'
     }
 
-    const { bundle } = await import('../../bundle/api.js.js')
-    const { loadBundleContext } = await import('../../bundle/context.js.js')
+    const { bundle } = await import('../../bundle/api.js')
+    const { loadBundleContext } = await import('../../bundle/context.js')
 
     const context = await loadBundleContext(options, viteOptions)
     let { code, map } = await bundle(context, bundleOptions)

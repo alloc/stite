@@ -7,7 +7,7 @@ import {
   createModuleProvider,
   ModuleProvider,
   VirtualModule,
-} from './plugins/moduleProvider'
+} from './plugins/moduleProvider.js'
 import { renderVirtualRoutes, VirtualRoute } from './virtualRoutes.js'
 
 export interface VirtualImports {

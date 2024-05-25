@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { debounce } from 'ts-debounce'
-import { readJson } from '../../readJson'
+import { readJson } from '../../readJson.js'
 
 export type FileMappings = Record<string, string> & {
   path: string

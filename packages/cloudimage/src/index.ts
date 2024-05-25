@@ -2,7 +2,7 @@ import { addDeployHook, addDeployTarget, addSecrets } from 'saus/deploy'
 import { Config } from './config.js'
 import secrets from './secrets.js'
 
-const hook = addDeployHook(() => import('./hook.js.js'))
+const hook = addDeployHook(() => import('./hook.js'))
 addSecrets(useCloudimage, secrets)
 
 export function useCloudimage(config: Config) {

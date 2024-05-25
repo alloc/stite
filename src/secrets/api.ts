@@ -1,3 +1,3 @@
-export { loadDeployContext } from '../deploy/context'
+export { loadDeployContext } from '../deploy/context.js'
 export { loadSecretSources } from './loadSecretSources'
-export { selectSource } from './utils/selectSource'
+export { selectSource } from './utils/selectSource.js'

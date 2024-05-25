@@ -15,16 +15,12 @@
     "esModuleInterop": true,
     "incremental": true,
     "lib": ["es2019"],
-    "module": "node16",
-    "moduleResolution": "node16",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "noUnusedLocals": true,
     "outDir": "dist",
     "paths": {
-      "@/*": ["./core/*.ts"],
-      "@client/*": ["./client/*.ts"],
-      "@runtime/*": ["./runtime/*.ts"],
-      "@utils/*": ["./utils/*.ts", "./utils/*/index.ts"],
-      "@vm/*": ["./vm/*.ts"]
+      "@/*": ["./core/*.ts"]
     },
     "skipLibCheck": true,
     "strict": true,

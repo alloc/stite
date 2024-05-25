@@ -8,9 +8,9 @@
     "dev": "tsup-node --watch --sourcemap"
   },
   "dependencies": {
-    "@saus/runtime": "workspace:*",
-    "@saus/utils": "workspace:*",
-    "@saus/vm": "workspace:*"
+    "@saus/runtime": "workspace:^",
+    "@saus/utils": "workspace:^",
+    "@saus/vm": "workspace:^"
   },
   "devDependencies": {
     "@runtime": "link:./node_modules/@saus/runtime/dist",

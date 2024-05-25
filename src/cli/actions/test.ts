@@ -27,8 +27,8 @@ async function startTestServer() {
     },
   }
 
-  const { vite } = await import('../../core/vite.js.js')
-  const { createServer } = await import('../../dev/api.js.js')
+  const { vite } = await import('../../core/vite.js')
+  const { createServer } = await import('../../dev/api.js')
 
   await createServer({
     plugins: [mainPlugin],

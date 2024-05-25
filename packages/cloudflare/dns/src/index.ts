@@ -2,7 +2,7 @@ import { secrets } from '@saus/cloudflare-request'
 import { addDeployHook, addDeployTarget, addSecrets } from 'saus/deploy'
 import { DnsRecordList } from './types.js'
 
-const hook = addDeployHook(() => import('./hook.js.js'))
+const hook = addDeployHook(() => import('./hook.js'))
 addSecrets(useCloudflareDNS, secrets)
 
 export function useCloudflareDNS(zoneId: string, records: DnsRecordList) {

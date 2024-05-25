@@ -1,5 +1,5 @@
-import { parseStackTrace } from '../../parseStackTrace'
-import { SourceMap } from '../sourceMap'
+import { parseStackTrace } from '../../parseStackTrace.js'
+import { SourceMap } from '../sourceMap.js'
 import { traceStackFrame } from './traceStackFrame'
 
 export function resolveStackTrace(

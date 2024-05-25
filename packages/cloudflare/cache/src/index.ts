@@ -1,2 +1,2 @@
 export * from './purgeAllFiles'
-export * from './ssr/purge'
+export * from './ssr/purge.js'

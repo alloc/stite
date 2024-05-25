@@ -14,13 +14,13 @@ import {
   BundleContext,
   InlineBundleConfig,
   loadBundleContext,
-} from '../bundle/context'
+} from '../bundle/context.js'
 import {
   BundleOptions,
   ClientAsset,
   ClientChunk,
   OutputBundle,
-} from '../bundle/types'
+} from '../bundle/types.js'
 import { DeployContext, getDeployContext } from '../deploy.js'
 import { getBundleHash } from './getBundleHash.js'
 import { vite } from './vite.js'
@@ -146,7 +146,7 @@ export async function loadBundle({
       })
     }
   } else {
-    const { bundle } = await import('../bundle/api.js.js')
+    const { bundle } = await import('../bundle/api.js')
     await options.onBundleStart?.(bundleOptions)
     bundleResult = await bundle(context, bundleOptions)
   }

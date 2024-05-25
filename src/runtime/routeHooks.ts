@@ -60,7 +60,7 @@ export function route(
     config = maybeLoad as RouteConfig
   }
 
-  let postHook: RoutePlugin.PostHook | void
+  let postHook: RoutePlugin.PostHook | void | undefined
   if (config?.plugin) {
     postHook = config.plugin(config)
     delete config.plugin

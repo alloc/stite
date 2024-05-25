@@ -1,2 +1,2 @@
-export * from './src/index'
-export * from './src/runtime'
+export * from './src/index.js'
+export * from './src/runtime.js'

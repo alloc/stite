@@ -7,15 +7,10 @@
     "declaration": true,
     "declarationMap": true,
     "incremental": true,
-    "module": "node16",
-    "moduleResolution": "node16",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "noEmitOnError": false,
     "outDir": "dist",
-    "paths": {
-      "@/*": ["../core/*"],
-      "@utils/*": ["../utils/*.ts", "../utils/*/index.ts"],
-      "@vm/*": ["../vm/*.ts"]
-    },
     "tsBuildInfoFile": "dist/.tsbuildinfo"
   }
 }

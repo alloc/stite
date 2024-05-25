@@ -33,8 +33,8 @@ export type BuildFlags = BuildOptions & {
 
 export async function build(cacheDir: string | undefined, options: BuildFlags) {
   const [{ build }, { getFailedPages, setFailedPages }] = await resolveModules(
-    import('../../build/api.js.js'),
-    import('../../build/failedPages.js.js')
+    import('../../build/api.js'),
+    import('../../build/failedPages.js')
   )
 
   if (process.stdin.isTTY) {

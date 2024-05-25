@@ -1,4 +1,4 @@
-import { TextDecoder } from './node/textDecoder'
+import { TextDecoder } from './node/textDecoder.js'
 
 /**
  * Simple wrapper around TextDecoder to help provide HTTP helpers that

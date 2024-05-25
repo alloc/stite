@@ -14,10 +14,10 @@
     "@ampproject/remapping": "^1.1.1",
     "@babel/code-frame": "^7.16.7",
     "@cush/exec": "^1.8.0",
-    "@saus/client": "workspace:*",
-    "@saus/runtime": "workspace:*",
-    "@saus/utils": "workspace:*",
-    "@saus/vm": "workspace:*",
+    "@saus/client": "workspace:^",
+    "@saus/runtime": "workspace:^",
+    "@saus/utils": "workspace:^",
+    "@saus/vm": "workspace:^",
     "cac": "^6.0.0",
     "convert-source-map": "^1.8.0",
     "debug": "^4.3.2",
@@ -39,7 +39,9 @@
     "yaml": "^2.1.1"
   },
   "devDependencies": {
+    "@client": "link:./client/dist",
     "@rollup/pluginutils": "5.0.1",
+    "@runtime": "link:./runtime/dist",
     "@types/babel__code-frame": "^7.0.3",
     "@types/convert-source-map": "^1.5.2",
     "@types/estree": "^0.0.51",
@@ -47,6 +49,8 @@
     "@types/glob-base": "^0.3.0",
     "@types/node": "^17.0.35",
     "@types/source-map-support": "^0.5.4",
+    "@utils": "link:./utils/dist",
+    "@vm": "link:./vm/dist",
     "arrify": "2.0.1",
     "base64-arraybuffer": "^1.0.2",
     "builtin-modules": "^3.2.0",
@@ -56,8 +60,7 @@
     "escalade": "^3.1.1",
     "glob-base": "^0.3.0",
     "quick-lru": "6.1.1",
-    "ts-debounce": "2.0.0",
-    "typescript": "4.8.4"
+    "ts-debounce": "2.0.0"
   },
   "engines": {
     "node": ">=14"

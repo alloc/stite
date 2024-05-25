@@ -1,4 +1,4 @@
-import type { Buffer } from '../buffer'
+import type { Buffer } from '../buffer.js'
 
 // In a Node environment, use the built-in Buffer class.
 declare const globalThis: any
